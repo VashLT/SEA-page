@@ -46,7 +46,11 @@
         &-nav {
             padding: 0 10px;
         }
-        &-svg_background {background-size: 90vw 70vh;}
+        &-svg_background--areas {background-size: 80% auto;}
+    }
+
+    .animate {
+        &-nav-item {animation-delay: 0.2s;}
     }
 
     .column {
@@ -114,10 +118,10 @@
         &-content--main {
             width: 80%;
         }
-        &-svg_background {
-            background-size: 90vw 50vh;
-            background-position: 50% 30%;
-        }
+        // &-svg_background {
+        //     background-size: 90vw 50vh;
+        //     background-position: 50% 30%;
+        // }
     }
     .typo {
         &-h1 {
@@ -182,7 +186,7 @@
 
     .c {
         &-question {width: 90vw !important;}
-        &-svg_background {background-size: 85vw 40vh;}
+        // &-svg_background {background-size: 85vw 40vh;}
     }
 }
 // mobiles oriented
@@ -242,9 +246,9 @@
                     & svg {transform: scale(0.6) !important;}    
                 }
         }
-        &-svg_background {
-            background-size: 85vw 35vh;
-            background-position: 50% 40%;
+        &-svg_background--land {
+            background-position: 50% 20%;
+            background-size: 90% 45%;
         }
     }
     .nav-item-spaced {padding-left: 2vw !important;}

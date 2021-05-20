@@ -10,6 +10,7 @@
         animation-delay: $image-delay-time;
         animation-fill-mode: forwards;
     }
+
     &-nav-item {
         opacity: 0;
 
@@ -21,9 +22,12 @@
     }
 
     &-logo {
+        transform: scale(0);
         animation-name: grow-out;
         animation-duration: $navbar-items--load-time;
+        animation-delay: $navbar--load-time;
         animation-timing-function: ease;
+        animation-fill-mode: forwards;
     }
 
     &-content {

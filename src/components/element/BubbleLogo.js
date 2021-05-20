@@ -42,8 +42,8 @@ export default function BubbleLogo(props) {
             onClick: () => document.getElementById("seaRedirectHome").click(),
             id: "logo"
         },
-        <Logo onClick={ () => document.getElementById("seaRedirectHome").click() }/>,
-        link
+        link,
+        <Logo onClick={ () => document.getElementById("seaRedirectHome").click() }/>
     );
 
     return bubbleContainer

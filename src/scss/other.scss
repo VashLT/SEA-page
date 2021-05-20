@@ -169,9 +169,10 @@
 .logo {
     @extend .c;
 
-    &.link {
+    &-link {
         display: flex;
         align-items: center;
+        margin-right: $margin--text_logo !important;
     }
 
     & img {

@@ -9,12 +9,12 @@ export default function AreasPage() {
     }, []);
 
     return (
-        <div id="areasPage" className="c-svg_background--areas smooth">
+        <div id="areasPage" className="smooth">
             <header id="headerAreasPage" className="animate-line">
                 <h1>Áreas del conocimiento</h1>
                 <BubbleLogo tipPosition="left" responsive={true}/>
             </header>
-            <main id="areas">
+            <main id="areas" className="c-svg_background--areas smooth">
                 {areas.map((area) => <Area {...area}/>)}
             </main>
         </div>

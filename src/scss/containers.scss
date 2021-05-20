@@ -243,7 +243,7 @@
         &_background {
             background-repeat: no-repeat;
             // background-size: contain;
-            background-position: 50% 50%;
+            background-position: center top;
             // background-attachment: fixed;
 
             opacity: 0.8;
@@ -251,14 +251,16 @@
             &--land {
                 @extend .c-svg_background;
                 background-image: url("../images/bg_landPage.jpg");
-                background-size: 90vw 80vh;
+                // background-size: 90vw 80vh;
+                background-size: 90% 80%;
                 // background-size: 1000px 800px;
             }
 
             &--areas {
                 @extend .c-svg_background;
+                background-position: center;
                 background-image: url("../images/bg_areasPage.jpg");
-                background-size: 50vw 70vh;
+                background-size: 50% 70%;
                 background-attachment: fixed;
             }
 

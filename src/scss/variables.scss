@@ -3,7 +3,7 @@ $bubble-radius: 30px;
 
 $navbar--height: 10vh;
 
-$navbar--load-time: 0.1s;
+$navbar--load-time: 1s;
 $navbar-items--load-time: 1s;
 
 $default-transition-time: 0.3s;
@@ -11,7 +11,7 @@ $default-transition-time: 0.3s;
 $reveal-transition-shift--horizontal: 5vw;
 $reveal-transition-shift--vertical: 7vh;
 
-$image-delay-time: 1s;
+$image-delay-time: $navbar--load-time;
 $image-animation-time: 2s;
 $image-shift-hover: -15px;
 
@@ -22,6 +22,7 @@ $schedule-col-width: 170px;
 $schedule-col-width--min: 8vw;
 
 $margin-header-mobile: 10px;
+$margin--text_logo: 5px;
 
 $page-margin: 150px;
 $areasPage-margin: 150px;
@@ -174,5 +175,8 @@ $color-languages--bg: #F5DCE0;
 
 // $color-font--main_title: #3E2A35;
 
-$font-family-base: system-ui, "Gill Sans", sans-serif;
-$font-family: system-ui, "Gill Sans", sans-serif;
+// $font-family-base: system-ui, "Gill Sans", sans-serif;
+// $font-family: system-ui, "Gill Sans", sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+$font-family: 'Open Sans', sans-serif;
+
