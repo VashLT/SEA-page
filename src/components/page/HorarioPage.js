@@ -16,13 +16,6 @@ export default function HorarioPage() {
 
         setArea(areasSchedule[targetAreaIndex]);
     }
-    function mapSchedule(schedule) {
-        return (
-            <div className="carousel-item carousel-schedule">
-                <Schedule id={schedule.id} stripes={schedule.stripes} />
-            </div>
-        )
-    }
     return (
         <div id="schedulePage">
             <header id="headerSchedulePage" className="animate-line">

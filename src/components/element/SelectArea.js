@@ -52,19 +52,14 @@ function getCSSClass(areaName) {
     switch (areaName) {
         case "Matemáticas":
             return "area-circle--green";
-            break;
         case "Física":
             return "area-circle--purple";
-            break;
         case "Química":
             return "area-circle--blue";
-            break;
         case "Idiomas":
             return "area-circle--pink";
-            break;
         case "Descriptiva":
             return "area-circle--orange";
-            break;
         default:
             return "area-circle--green";
     }

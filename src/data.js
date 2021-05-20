@@ -4,8 +4,6 @@ import chemestrySVG from "./images/chemestry.svg";
 import languageSVG from "./images/language.svg";
 import geometrySVG from "./images/geometry.svg";
 
-import SCSS from "./scss/variables.scss";
-
 const areas = [
     {
         name: "Matemáticas",
@@ -527,4 +525,4 @@ areas.forEach((area, index) => areasMapIndex.set(area.name, index));
 // Idiomas: color: #e2226f, hover: #bb1b5b, bg: #f6c1d6, sub: #e86499
 // Descriptiva: color: #e97e1c, hover: #c86a14, bg: #f5c599, sub: #e48b3a
 
-export { areas as areas, areasSchedule as areasSchedule, faqs as faqs, areasMapIndex as areasMapIndex};
+export { areas, areasSchedule, faqs, areasMapIndex};

@@ -138,6 +138,8 @@
 
         border-bottom: solid 1px rgb(216, 214, 214);
 
+        &:hover {background-color: $color-soft--hover;}
+
         &::before {
             content: "";
             border-radius: 50%;
@@ -154,6 +156,7 @@
     width: 100%;
 
     padding: 0px $page-margin;
+    min-width: $schedule-min_width;
     margin: 0;
 }
 

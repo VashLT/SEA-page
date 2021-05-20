@@ -4,10 +4,7 @@ Source code of SEA Online page built with `React` and hosted on `Heroku`. You ca
 ## Deployment
 In order to install of the dependencies clone this repo and execute the following commands:
 ```
-npm init -y
-```
-```
-npm start
+npm install
 ```
 
 ## Available Scripts

@@ -20,6 +20,7 @@ $title-overline-width: 40%;
 
 $schedule-col-width: 170px;
 $schedule-col-width--min: 8vw;
+$schedule-min_width: 700px;
 
 $margin-header-mobile: 10px;
 $margin--text_logo: 5px;
@@ -126,8 +127,11 @@ $color-stripe--hover: rgb(226, 241, 250);
 
 $color-blue-link: #859ce7;
 
+$color-soft--hover: rgb(230, 230, 233);
+
 $color-question-header: #fff;
-$color-question-body: rgb(244, 244, 247);
+$color-question-body: $color-soft--hover;
+$color-question--border: rgb(194, 192, 192);
 
 
 $color-font: #3E2A35;
@@ -139,13 +143,12 @@ $color-font--main_text: #faead2c2;
 
 $color-font--schedule_header: white;
 $color-font--schedule_tutor: #3E2A35;
+
 $color-font--faq-title: #3E2A35;
 $color-font--faq-answer: #5C5346;
 
 
 // 
-
-$color-soft--hover: rgb(244, 244, 247);
 
 $color-mathematics--header: #4ed34e;
 $color-mathematics--subject: #77dd77;
@@ -168,15 +171,7 @@ $color-languages--header: #E18AAA;
 $color-languages--subject: #ECBDC4;
 $color-languages--bg: #F5DCE0;
 
-// $color-font: #453F3C;
-// $color-font--title: #453F3C;
-// $color-font--schedule_header: white;
-// $color-font--schedule_tutor: #3E2A35;
 
-// $color-font--main_title: #3E2A35;
-
-// $font-family-base: system-ui, "Gill Sans", sans-serif;
-// $font-family: system-ui, "Gill Sans", sans-serif;
 $font-family-base: 'Open Sans', sans-serif;
 $font-family: 'Open Sans', sans-serif;
 

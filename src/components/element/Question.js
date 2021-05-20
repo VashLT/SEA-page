@@ -9,8 +9,8 @@ export default function Question(props) {
         <div class="card c-question smooth-out">
             <div class="card-header c-question--header" id={`heading${props.id}`} onClick={() => document.getElementById(`question${props.id}`).click() }>
             <h5 class="mb-0">
-                    <a class="btn typo-p" id={ `question${props.id}`}data-toggle="collapse" data-target={`#collapse${props.id}`} aria-expanded="true" aria-controls="collapseOne">
-                    {props.question}
+                <a class="btn typo-p" id={ `question${props.id}`} data-toggle="collapse" data-target={`#collapse${props.id}`} aria-expanded="true" aria-controls="collapseOne">
+                {props.question}
                 </a>
             </h5>
             </div>

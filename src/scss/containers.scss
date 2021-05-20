@@ -242,24 +242,20 @@
     &-svg {
         &_background {
             background-repeat: no-repeat;
-            // background-size: contain;
             background-position: center top;
-            // background-attachment: fixed;
 
             opacity: 0.8;
             position: relative;
             &--land {
                 @extend .c-svg_background;
-                background-image: url("../images/bg_landPage.jpg");
-                // background-size: 90vw 80vh;
+                background-image: url("../images/bg-landPage.jpg");
                 background-size: 90% 80%;
-                // background-size: 1000px 800px;
             }
 
             &--areas {
                 @extend .c-svg_background;
                 background-position: center;
-                background-image: url("../images/bg_areasPage.jpg");
+                background-image: url("../images/bg-areasPage.jpg");
                 background-size: 50% 70%;
                 background-attachment: fixed;
             }
@@ -288,6 +284,8 @@
             flex: 1 0 auto;
 
             overflow: auto;
+
+            border-bottom: solid 2px $color-question--border;
 
             max-width: 100%;
 
