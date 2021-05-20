@@ -1,0 +1,78 @@
+// $theme-colors: (
+    
+// );
+
+@import "~bootstrap/scss/bootstrap";
+@import "./containers.scss";
+@import "./rules.scss";
+@import "./other.scss";
+@import "./resize.scss";
+
+body, html {
+    background-color: $color-bg;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: $font-family;
+}
+
+.fullscreen-container {
+    @extend .c;
+
+    min-width: 100%;
+
+    min-height: 100vh;
+    height: auto;
+}
+
+#root {
+    @extend .c;
+
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+#app {
+    @extend .c;
+
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    font-family: $font-family;
+}
+
+#basePage {
+    @extend .fullscreen-container;
+    @extend .smooth;
+
+    justify-content: flex-start;
+    font-family: $font-family;
+}
+
+#landPage {
+    @extend #basePage;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: $navbar--height + 2vh;
+
+    overflow-y: hidden;
+
+    & main {
+        @extend .c;
+
+        min-height: 88vh;
+        width: 100%;
+    }
+}
+
+#areasPage, #schedulePage, #faqsPage { 
+    @extend #basePage; 
+    padding: 0px;
+}

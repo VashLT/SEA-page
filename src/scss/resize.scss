@@ -1,0 +1,251 @@
+@media screen and (max-width: 1600px) {
+    .c {
+        &-nav {padding: 0 5vw;}
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #areas {
+        justify-content: space-evenly !important;
+    }
+
+    #headerAreasPage {
+        &::after {min-width: 560px;}
+    }
+     #headerFAQPage {&::after {min-width: 640px;}}
+
+    .typo {
+        &-nav {
+            &-link {
+                font-size: 25px;
+            }
+        }
+        &-h1 {
+            &--main {font-size: 4vw;}
+        }
+        &-p {
+            font-size: 1.7vw;
+            &--main {
+                font-size: 2.5vw;
+            }
+            &--schedule {
+                &-header {font-size: 1.8vw;}
+                &-time, &-tutor {font-size: 1.5vw;}
+            }
+        }
+    }
+
+    .c {
+        &-area {
+            &--header {
+                & a {
+                    font-size: 25px;
+                }
+            }
+        }
+        &-nav {
+            padding: 0 10px;
+        }
+        &-svg_background {background-size: 90vw 70vh;}
+    }
+
+    .column {
+        &-header, &--day, &--time {
+            min-width: 120px;
+        }
+    }
+
+    .bubble-responsive {
+        min-width: 70px;
+        width: 10vw;
+    }
+    .logo-link {
+        opacity: 0;
+        display: none; 
+    }
+
+    .horario, .c-select--schedule, #headerSchedulePage {
+        padding: 1vh 8vw !important;
+    }
+
+    .c-nav nav#navbar .show {
+        background-color: $color-navbar--hover !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #headerSchedulePage, #headerAreasPage, #headerFAQPage {
+        padding: 0 30px !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        h1 {
+            font-size: 4vw;
+        }
+    }
+    #headerFAQPage{
+        &::after{ min-width: 50vw; }
+    }
+    #mainLandPage {
+        padding-top: 50px !important;
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    #footerLandPage {display: none;}
+
+    #faqs {
+        padding: 5vh 0 5vh;
+        align-items: center;
+    }
+
+    .column {
+        &-header, &--day, &--time {
+            min-width: 8vw;
+        }
+    }
+    .horario, .c-select--schedule{
+        padding: 1vh 20px !important;
+    }
+    .c {
+        &-select--schedule {
+           padding: 2vh 20px;
+        }
+        &-content--main {
+            width: 80%;
+        }
+        &-svg_background {
+            background-size: 90vw 50vh;
+            background-position: 50% 30%;
+        }
+    }
+    .typo {
+        &-h1 {
+            &--main {
+                font-size: 50px;} 
+                text-align: center;
+        }
+        &-p {
+            &-answer {font-size: 1.4vw;}
+            &--main {font-size: 30px;}
+            &--schedule {
+                &-header {font-size: 2vw !important;}
+                &-time, &-tutor {font-size: 1.5vw !important;}
+            }
+        }
+        &-a {font-size: 1.4vw;}
+    }
+    .btn {
+        &-join {
+            width: 200px;
+            height: 6vh;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #landPage {
+        & main {justify-content: flex-start !important;}
+    }
+    #headerAreasPage {
+        align-items: center !important;
+        & h1 { font-size: 4vw;}
+
+        &::after {min-width: 50vw;}
+    
+    }
+    #headerSchedulePage {
+        align-items: center !important;
+        h1 { font-size: 40px; }
+        &::after {min-width: 60vw;}
+    }
+    #headerFAQPage {
+        h1 { font-size: 4vw; }
+        &::after {min-width: 55vw;}
+    }
+    #selectArea, .select-area, .select-menu {
+        font-size: 2.5vw;
+        min-width: 250px !important;
+        &::before {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .select-area { min-width: 240px !important; }
+
+    .typo {
+        &-p {font-size: 18px;}
+        &-p-answer {font-size: 15px;}
+        &-a {font-size: 15px;}
+    }
+
+    .c {
+        &-question {width: 90vw !important;}
+        &-svg_background {background-size: 85vw 40vh;}
+    }
+}
+// mobiles oriented
+@media screen and (max-width: 800px) {
+    #headerFAQPage, #headerSchedulePage, #headerAreasPage {
+        &::after {
+            position: absolute !important;
+            transform: translateY(10px) !important;
+        }
+        & h1 {
+            font-size: 25px !important;
+            width: 200px;
+
+        }
+        justify-content: space-between !important;
+        padding: 0 $margin-header-mobile !important;
+    }
+    #areas {
+        padding: 40px 10vw 0px !important;
+    }
+    #logo {
+        transform: scale(0.8);
+        &:hover {
+            transform: scale(0.85) !important;
+
+        }
+    }
+    .horario, .c-select--schedule {padding: 1vh 0px !important;}
+    a.typo-p {font-size: 16px;}
+    .typo {
+        &-h1--main {font-size: 8vw !important;}
+        &-p {
+            &--main {font-size: 5vw !important;}
+        }
+        &-nav-link {font-size: 20px !important;}
+    }
+    .btn-join {max-width: 150px;}
+    .c {
+        &-area {
+            width: 220px;
+            min-width: 220px;
+            &--header {
+                & a {font-size: 20px;}
+                & img {width: 25px !important;}
+            }
+        }
+        &-subject {
+            & a {font-size: 15px}
+        }
+        &-image {
+            &--main {
+                & img {min-width: 70vw;}
+            }
+        }
+        &-btn--join {
+                & a {
+                    & svg {transform: scale(0.6) !important;}    
+                }
+        }
+        &-svg_background {
+            background-size: 85vw 35vh;
+            background-position: 50% 40%;
+        }
+    }
+    .nav-item-spaced {padding-left: 2vw !important;}
+}

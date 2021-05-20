@@ -1,0 +1,179 @@
+@import "./variables.scss";
+@import "./animations.scss";
+
+.header-base {
+    @extend .c;
+
+    padding: 1vh 4vw 1vh 0px;   
+    position: relative;
+
+
+    flex-direction: row !important;
+
+    justify-content: flex-start !important;
+
+    width: 100%;
+    height: auto;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        color: $color-font--title;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 25%;
+        width: $title-overline-width;
+        height: 4px;
+        background-color: $color-header-hover-bar;
+    }
+}
+
+#headerAreasPage {
+    @extend .header-base;
+    padding: 0px $page-margin !important;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+#areas {
+    @extend .c;
+    flex-direction: row !important;
+    padding: 40px $page-margin 0px !important;
+
+    flex-wrap: wrap;
+
+    transition: all 0.2s ease;
+
+    width: 100%;
+    min-height: 85vh;
+    height: auto;
+
+    justify-content: space-evenly !important;
+}
+
+#headerSchedulePage { @extend #headerAreasPage;}
+
+#headerFAQPage { @extend #headerAreasPage;}
+
+#areasSchedule {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 75vh;
+    max-height: 75vh;
+    height: auto;
+}
+
+.btn {
+    &-logo {
+        & svg {
+            transform: scale(1.2);
+        }
+    }
+    &-join {
+        @extend .c;
+        flex-direction: row !important;
+
+        background-color: $color-join-btn;
+
+        width: 220px;
+        height: 6vh;
+
+        color: white !important;
+        font-size: 35px;
+        font-weight: 500;
+        
+        border-radius: $btn-radius;
+    }
+}
+
+.nav {
+    &-links {
+        margin-left: auto;
+    }
+    &-item {
+        &-spaced {
+            border-radius: $btn-radius;
+            padding: 10px 30px;
+        }
+    }
+}
+
+.typo {
+    &-all {
+        & h1, p {
+            color: $color-font;
+        }
+    }
+    &-nav {
+        &-link {
+            font-size: 30px;
+            font-weight: 500;
+            color: $color-nav-link !important;
+
+            &:hover {color: $color-nav-link--hover !important;}
+        }
+        &-title {
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 40px;
+            font-weight: 600;
+            color: white !important;
+            font-family: $font-family;
+        }
+    }
+    &-p {
+        font-size: 25px;
+        font-weight: 500;
+        color: $color-font--faq-title !important;
+        &--schedule {
+            @extend .typo-p;
+            margin: 0;
+            padding: 20px 10px;
+
+            transition: all 0.2s ease;
+
+            &-header {
+                @extend .typo-p--schedule;
+                font-size: 30px;
+                text-align: center;
+                color: $color-font--schedule_header !important;
+            }
+            &-time {
+                @extend .typo-p--schedule;
+                font-size: 20px;
+            }
+            &-tutor {
+                @extend .typo-p--schedule;
+                font-size: 20px;
+                color: $color-font--schedule_tutor !important;
+            }
+        }
+        &--main {
+            text-align: justify;
+            font-size: 40px;
+            color: $color-font--main_text !important;
+        }
+        &-answer {
+            color: $color-font--faq-answer !important;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    &-h1 {
+        &--main{
+            font-size: 60px;
+            font-weight: 650;
+            color: $color-font--main_title !important;
+        }
+    }
+    &-a {
+        color: $color-blue-link;
+        font-size: 20px;
+    }
+}
+
+
+  
