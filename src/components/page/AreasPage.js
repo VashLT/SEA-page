@@ -5,7 +5,7 @@ import BubbleLogo from "../element/BubbleLogo";
 
 export default function AreasPage() {
     useEffect(() => {
-        document.title = "SEA | Areas"
+        document.title = "SEA | Áreas"
     }, []);
 
     return (
