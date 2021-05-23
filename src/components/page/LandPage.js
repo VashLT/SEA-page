@@ -18,11 +18,11 @@ export default function LandPage() {
     }
     function darkTheme() {
         toggleTheme();
-        document.getElementById("landPage").classList.toggle("dark-mode");
+        document.getElementById("app").classList.toggle("dark-mode");
         document.getElementById("navbar-parent").classList.toggle("dark-mode");
     }
     return (
-        <div id="landPage" className="smooth dark-mode">
+        <div id="landPage" className="smooth">
             <ThemeSwitcher themeFunction={ darkTheme }/>
             <header className="c-nav smooth dark-mode" id="navbar-parent">
                 <Navbar />

@@ -13,7 +13,7 @@ import TestPage from "./components/page/TestPage";
 
 function App() {
   return (
-    <div id="app">
+    <div id="app" className="dark-mode">
       <Router>
         <Switch>
           <Route exact path='/'>

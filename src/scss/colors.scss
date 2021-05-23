@@ -46,8 +46,13 @@ $color-font--faq-answer: #5C5346;
 
 // dark mode
 
-$color-dark_theme--bg: #2c2f33;
-$color-dark_theme-hover--navbar: #23272a;
+$color-dark_theme--blue: #032343;
+
+$color-dark_theme--bg: #36393F;
+$color-dark_theme-hover--navbar: #202225;
+$color-dark_theme--navbar_items: #ededed;
+$color-dark_theme-hover--navbar_items: #A09BE7;
+$color-dark_theme-hover--navbar_items_bar: white;
 
 $color-dark_theme--main_text: #ffffff;
 $color-dark_theme--main_title: #99aab5;
@@ -55,9 +60,11 @@ $color-dark_theme--main_title: #99aab5;
 $color-theme_switcher--dark: #111;
 $color-theme_switcher-icon--dark: rgb(247, 208, 54);
 $color-theme_switcher-icon-hover--dark: rgb(248, 216, 85);
-$color-dark_theme--navbar_items: #99aab5;
 
-$color-dark_theme--bubble_logo: #032343;
+$color-dark_theme--bubble_logo: $color-dark_theme--blue;
+$color-dark_theme--title_logo: #fff;
+
+$color-dark_theme-hover--bg: #37354e;
 
 // 
 
