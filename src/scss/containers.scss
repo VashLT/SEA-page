@@ -78,6 +78,8 @@
             @extend .c-btn;
             min-width: 150px;
 
+            & svg {transform: scale(1.2);}
+
             &:hover {
                 transform: scale(1.02);
                 box-shadow: 2px 1px 4px 0 $color-svg-bg--hover, 2px 2px 8px 0 $color-svg-bg--hover;
@@ -85,7 +87,7 @@
                     transform: scale(1.02);
                 }
                 & svg {
-                    transform: scale(1.02);
+                    transform: scale(1.23);
                 }
             }
         }
@@ -248,14 +250,14 @@
             position: relative;
             &--land {
                 @extend .c-svg_background;
-                background-image: url("../images/bg-landPage.jpg");
+                background-image: url("../images/bg-landPage.png");
                 background-size: 90% 80%;
             }
 
             &--areas {
                 @extend .c-svg_background;
                 background-position: center;
-                background-image: url("../images/bg-areasPage.jpg");
+                background-image: url("../images/bg-areasPage.png");
                 background-size: 50% 70%;
                 background-attachment: fixed;
             }
@@ -305,6 +307,57 @@
             cursor: pointer;
             transform: scale(1.005);
             box-shadow: 1px 2px 4px 0 $color-bg--hover, 1px 4px 8px 0 $color-bg--hover;
+        }
+    }
+
+    &-theme_switcher {
+        @extend .c;
+
+        position: absolute;
+        top: 20%;
+        right: 0;
+        background-color: white;
+        width: $width--theme_switcher;
+        height: 80px;
+
+        border-radius: $radius--theme_switcher 0 0 $radius--theme_switcher;
+        box-shadow: 0 1px 2px 0 #c0c0c0, 0 2px 4px 0 #c0bfbf;
+
+        align-items: flex-start;
+
+        z-index: 200;
+
+        transition: width 0.2s ease-in;
+
+        &:hover {
+            width: $width-hover--theme_switcher;
+            box-shadow: 0 2px 4px 0 #c0c0c0, 0 3px 8px 0 #c0bfbf;
+            cursor: pointer;
+            & svg {fill: gray;}
+
+            // &::after {
+            //     content:"";
+            //     position: absolute;
+            //     margin-left: 25px;
+            //     top: 20%;
+            //     right: $width--theme_switcher;
+            //     height: inherit;
+            //     border-radius: 50%;
+            //     background-color: $color-soft--hover;
+            // }
+        }
+
+        & svg {
+            margin-left: 25px;
+        }
+
+    }
+
+    &-widget { 
+        // overflow-y: hidden;
+        &:hover {
+            transform: translateY(-42%);
+            box-shadow: 2px 1px 4px 0 $color-svg-bg--hover, 2px 2px 8px 0 $color-svg-bg--hover;
         }
     }
 }

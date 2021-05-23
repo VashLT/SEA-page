@@ -1,20 +1,37 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from "../element/Navbar";
+import DiscordWidget from "../element/DiscordWidget";
+import ThemeSwitcher from "../element/ThemeSwitcher";
 import img1 from "../../images/tutoria.png";
-import img2 from "../../images/conference.png";
+// import img2 from "../../images/conference.png";
 
 
 export default function LandPage() {
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+    }, []);
+    const [theme, setTheme] = useState("dark");
+    function toggleTheme() {
+        if (theme === "light") {
+            setTheme("dark");
+        } else {setTheme("light")}
+    }
+    function darkTheme() {
+        toggleTheme();
+        document.getElementById("landPage").classList.toggle("dark-mode");
+        document.getElementById("navbar-parent").classList.toggle("dark-mode");
+    }
     return (
-        <div id="landPage" className="smooth">
-            <header className="c-nav smooth" id="navbar-parent">
-                <Navbar theme="light" />
+        <div id="landPage" className="smooth dark-mode">
+            <ThemeSwitcher themeFunction={ darkTheme }/>
+            <header className="c-nav smooth dark-mode" id="navbar-parent">
+                <Navbar />
             </header>
             <main className="c-svg_background--land smooth">
                 <div id="mainLandPage">
                     <div className="c-content--main animate-content">
                         <h1 className="typo-h1--main">Ahora te acompañamos desde Discord</h1>
-                        <p className="typo-p--main">Unete a nuestro servidor de Discord y recibe tutorías con tan solo <strong>un click</strong>.</p>
+                        <p className="typo-p--main">Únete a nuestro servidor de Discord y recibe tutorías con tan solo <strong>un click</strong>.</p>
                         <div className="c-btn--join">
                             <a className="btn btn-join smooth" href="https://discord.gg/FbVrHS79" rel="noreferrer" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-discord" viewBox="0 0 16 16">
@@ -30,8 +47,8 @@ export default function LandPage() {
                     </div>
                 </div>
                 <div id="footerLandPage">
-                    <div className="c-image animate-image">
-                        <img className="rounded" src={ img2 } alt="SEA Online" />
+                    <div className="c-widget smooth--widget animate-widget">
+                        <DiscordWidget theme={theme} />
                     </div>
                 </div>
             </main>

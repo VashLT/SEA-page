@@ -118,6 +118,12 @@
         &-content--main {
             width: 80%;
         }
+        &-btn {
+            & svg {transform: scale(1.0);}
+            &:hover {
+                & svg {transform: scale(1.03);}
+            }
+        }
         // &-svg_background {
         //     background-size: 90vw 50vh;
         //     background-position: 50% 30%;
@@ -141,9 +147,10 @@
     }
     .btn {
         &-join {
-            width: 200px;
-            height: 6vh;
-            font-size: 20px;
+            min-width: 250px;
+            width: 20vw;
+            height: 8vh;
+            font-size: 35px;
         }
     }
 }
@@ -231,7 +238,11 @@
         &-nav-link {font-size: 20px !important;}
     }
 
-    .btn-join {max-width: 150px;}
+    .btn-join {
+        min-width: 40vw;
+        max-width: 150px;
+        font-size: 4.2vw;
+    }
     .c {
         &-area {
             width: 220px;
@@ -251,7 +262,7 @@
         }
         &-btn--join {
                 & a {
-                    & svg {transform: scale(0.6) !important;}    
+                    & svg {transform: scale(0.8) !important;}    
                 }
         }
         &-svg_background--land {

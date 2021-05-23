@@ -69,7 +69,7 @@
 .btn {
     &-logo {
         & svg {
-            transform: scale(1.2);
+            transform: scale(1.4);
         }
     }
     &-join {
@@ -78,14 +78,15 @@
 
         background-color: $color-join-btn;
 
-        width: 220px;
-        height: 6vh;
+        width: 25vw;
+        height: 10vh;
 
         color: white !important;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 500;
         
         border-radius: $btn-radius;
+
     }
 }
 
@@ -111,22 +112,22 @@
         &-link {
             font-size: 30px;
             font-weight: 600;
-            color: $color-nav-link !important;
+            color: $color-nav-link;
 
-            &:hover {color: $color-nav-link--hover !important;}
+            &:hover {color: $color-nav-link--hover ;}
         }
         &-title {
             text-decoration: none;
             font-size: 40px;
             font-weight: 600;
-            color: white !important;
+            color: white ;
             font-family: $font-family;
         }
     }
     &-p {
         font-size: 25px;
         font-weight: 500;
-        color: $color-font--faq-title !important;
+        color: $color-font--faq-title ;
         &--schedule {
             @extend .typo-p;
             margin: 0;
@@ -138,7 +139,7 @@
                 @extend .typo-p--schedule;
                 font-size: 30px;
                 text-align: center;
-                color: $color-font--schedule_header !important;
+                color: $color-font--schedule_header ;
             }
             &-time {
                 @extend .typo-p--schedule;
@@ -147,16 +148,16 @@
             &-tutor {
                 @extend .typo-p--schedule;
                 font-size: 20px;
-                color: $color-font--schedule_tutor !important;
+                color: $color-font--schedule_tutor ;
             }
         }
         &--main {
             text-align: justify;
             font-size: 40px;
-            color: $color-font--main_text !important;
+            color: $color-font--main_text ;
         }
         &-answer {
-            color: $color-font--faq-answer !important;
+            color: $color-font--faq-answer ;
             font-size: 20px;
             font-weight: 400;
         }
@@ -165,7 +166,7 @@
         &--main{
             font-size: 60px;
             font-weight: 800;
-            color: $color-font--main_title !important;
+            color: $color-font--main_title ;
         }
     }
     &-a {

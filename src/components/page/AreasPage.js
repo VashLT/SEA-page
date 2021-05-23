@@ -11,7 +11,7 @@ export default function AreasPage() {
     return (
         <div id="areasPage" className="smooth">
             <header id="headerAreasPage" className="animate-line">
-                <h1>Áreas del conocimiento</h1>
+                <h1>Salas de chat</h1>
                 <BubbleLogo tipPosition="left" responsive={true}/>
             </header>
             <main id="areas" className="c-svg_background--areas smooth">
