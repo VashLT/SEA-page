@@ -366,6 +366,12 @@
     }
 }
 
+@media (max-height: 1100px) and (max-width: 800px) { 
+    .speech-bubble--right {
+        &::after {margin-right: -10px;}
+    }
+}
+
 @media screen and (max-width: 500px) { 
     .btn-join {font-size: 20px !important;}
 }
