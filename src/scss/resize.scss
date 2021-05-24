@@ -159,7 +159,7 @@
         &-join {
             min-width: 250px;
             width: 20vw;
-            height: 8vh;
+            height: 9.5vh;
             font-size: 35px;
         }
     }
@@ -170,14 +170,12 @@
         &::after {transform: translateY(10px);}
     }
     #landPage {
+        overflow-y: auto;
         & #mainLandPage {height: 70vh;}
         & #footerLandPage {height: 17vh;}
-        // & .btn-join {
-        //     // font-size: 35px;
-        // }
         & .animate {
             &-widget {
-                transform: translateY(40%);
+                transform: translateY(45%);
                 animation-name: swipe-up--responsive;
             }
         }
@@ -199,6 +197,9 @@
             }
             &-area {min-height: 600px;}
         }
+    #schedulePage {
+        & #areasSchedule {overflow: auto;}
+    }
 
 }
 
@@ -345,4 +346,22 @@
 
 @media screen and (max-height: 700px) {
     #navbar-parent {min-height: 16vh;}
+}
+
+@media screen and (max-height: 750px) and (max-width: 1500px) {
+    #landPage {
+        & .typo {
+            &-h1--main {font-size: 3.5vw;}
+            &-p--main {font-size: 2vw;}
+        }
+        & .btn-join {font-size: 2.7vw;}
+    }
+}
+
+@media screen and (max-height: 630px) and (max-width: 1500px) {
+    .c {
+        &-widget {
+            transform: translateY(10%);
+        }
+    }
 }

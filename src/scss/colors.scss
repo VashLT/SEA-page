@@ -76,8 +76,8 @@ $color-dark_theme-font--header: #eeeeee;
 
 // join button
 
-$color-dark_theme--btn_join: #1d334d;
-
+// $color-dark_theme--btn_join: #1d334d; 
+$color-dark_theme--btn_join: $color-uis--green;
 // schedule page
 
 $color-dark_theme--schedule_stripe: rgb(35, 37, 43);

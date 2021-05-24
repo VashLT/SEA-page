@@ -15,27 +15,27 @@ const areas = [
         subjects: [
             {
                 name: "Cálculo I",
-                link: "https://discord.gg/NURFa6sF"
+                link: "https://discord.gg/xVWbmSCsXM"
             },
             {
                 name: "Cálculo II",
-                link: "https://discord.gg/bdRYMCHk"
+                link: "https://discord.gg/dU73M9SJvf"
             },
             {
                 name: "Cálculo III",
-                link: "https://discord.gg/gAU7HHdq"
+                link: "https://discord.gg/YQgvrr7vsH"
             },
             {
                 name: "Ec. Diferenciales",
-                link: "https://discord.gg/KvwTUATK"
+                link: "https://discord.gg/CaAatuextk"
             },
             {
                 name: "Algebra Lineal I",
-                link: "https://discord.gg/E7vWRX8x"
+                link: "https://discord.gg/9XJbBAKJMm"
             },
             {
                 name: "Algebra Lineal II",
-                link: "https://discord.gg/zgKchd3e"
+                link: "https://discord.gg/MGWJsZxBVE"
             },
         ]
     },
@@ -49,15 +49,15 @@ const areas = [
         subjects: [
             {
                 name: "Física I",
-                link: "https://discord.gg/6HaCVsXK"
+                link: "https://discord.gg/ddfzTzt4Xe"
             },
             {
                 name: "Física II",
-                link: "https://discord.gg/uR69vbfP"
+                link: "https://discord.gg/S67YFZkPvh"
             },
             {
                 name: "Física III",
-                link: "https://discord.gg/uxWZwcgt"
+                link: "https://discord.gg/N8VHrm9CKf"
             }
         ]
     },
@@ -71,19 +71,19 @@ const areas = [
         subjects: [
             {
                 name: "Química I",
-                link: "https://discord.gg/JhKwMWNy"
+                link: "https://discord.gg/VH6XTfsFwB"
             },
             {
                 name: "Química II",
-                link: "https://discord.gg/btXgREDN"
+                link: "https://discord.gg/BygK8Vb3uJ"
             },
             {
                 name: "Química III",
-                link: "https://discord.gg/MKYW7qqB"
+                link: "https://discord.gg/wYXffGfRKk"
             },
             {
                 name: "Química varios",
-                link: "https://discord.gg/rnyWhWth"
+                link: "https://discord.gg/BD498FvX84"
             },
         ]
     },
@@ -97,11 +97,11 @@ const areas = [
         subjects: [
             {
                 name: "Inglés",
-                link: "https://discord.gg/U8WkYdDB"
+                link: "https://discord.gg/CkY7bs2YpW"
             },
             {
                 name: "Frances",
-                link: "https://discord.gg/QmuaDBfK"
+                link: "https://discord.gg/MGuKFcBhcA"
             },
         ]
     },
@@ -115,7 +115,7 @@ const areas = [
         subjects: [
             {
                 name: "Geometría Descriptiva",
-                link: "https://discord.gg/qJnfNMwR"
+                link: "https://discord.gg/snWrnP5tuS"
             },
         ]
     },
