@@ -250,7 +250,7 @@
             &--land {
                 @extend .c-svg_background;
                 background-image: url("../images/bg-landPage.png");
-                background-size: 90% 80%;
+                background-size: 90% 75%;
             }
 
             &--areas {
@@ -356,7 +356,7 @@
     &-widget { 
         // overflow-y: hidden;
         &:hover {
-            transform: translateY(-42%);
+            transform: translateY(-48%);
             box-shadow: 2px 1px 4px 0 $color-svg-bg--hover, 2px 2px 8px 0 $color-svg-bg--hover;
         }
     }

@@ -48,6 +48,10 @@
         & span {transform: scale(1.2);}
     }
 
+    &-parent {
+        height: $navbar--height;
+    }
+
     &-parent.active {
         background-color: $color-navbar--hover;
     }
@@ -69,7 +73,7 @@
     align-items: flex-start !important;
     padding: 0 15%;
     width: 100%;
-    min-height: 28vh;
+    min-height: 28%;
     height: auto;
 }
 

@@ -2,11 +2,14 @@ $test: #3ba13b;
 
 // defaults
 
-$color-uis--green: rgb(103, 185, 62);
-$color-sea--blue: rgb(41, 135, 175);
+$color-uis--green: #67b93e;
 
-$color-sea-bubble: #c1f2b8;
-$color-join-btn: $color-sea--blue;
+$color-sea--blue: rgb(46, 43, 105);
+// $color-sea--blue: rgb(34, 106, 169);
+
+$color-sea-bubble: #a6d3dc;
+// $color-sea-bubble: #8ad9e4;
+$color-join-btn: #6b37c1;
 
 // navbar
 $color-nav-link--hover: #7A6C5D;
@@ -15,8 +18,8 @@ $color-nav-link: #665b4e;
 $color-navbar--hover: #e6e7e1;
 
 
-$color-hover-bar: #859ce7;
-$color-header-hover-bar: #7D80DA;
+$color-hover-bar: $color-sea-bubble;
+$color-header-hover-bar: $color-sea-bubble;
 
 $color-bg: rgb(241, 242, 235);
 $color-bg--hover:rgb(172, 168, 162);
@@ -41,8 +44,8 @@ $color-font: #3E2A35;
 $color-font--title: rgb(20, 46, 80);
 
 // $color-font--main_title: rgb(157, 92, 99);
-$color-font--main_title: #212529;
-$color-font--main_text: #faead2c2;
+$color-font--main_title: #002626;
+$color-font--main_text: #F7F3E3;
 
 $color-font--schedule_header: white;
 $color-font--schedule_tutor: #3E2A35;
@@ -65,7 +68,7 @@ $color-dark_theme-hover--bg: #212730;
 // navbar
 $color-dark_theme-hover--navbar: #23272a;
 $color-dark_theme--navbar_items: #ededed;
-$color-dark_theme-hover--navbar_items: #A09BE7;
+$color-dark_theme-hover--navbar_items: #7289DA;
 $color-dark_theme-hover--navbar_items_bar: white;
 
 $color-dark_theme--main_text: #eeeeee;
@@ -77,7 +80,7 @@ $color-dark_theme-font--header: #eeeeee;
 
 // join button
 
-$color-dark_theme--btn_join: #184d47;
+$color-dark_theme--btn_join: #1d334d;
 
 // schedule page
 
@@ -103,7 +106,9 @@ $color-theme_switcher--dark: #111;
 $color-theme_switcher-icon--dark: rgb(247, 208, 54);
 $color-theme_switcher-icon-hover--dark: rgb(248, 216, 85);
 
-$color-dark_theme--bubble_logo: #2b343f;
+// $color-dark_theme--bubble_logo: #2b343f; #a2bcdb
+$color-dark_theme--bubble_logo: #8096b1;
+
 $color-dark_theme--title_logo: #fff;
 
 // 

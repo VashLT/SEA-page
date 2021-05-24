@@ -153,7 +153,7 @@
         }
         &--main {
             text-align: justify;
-            font-size: 40px;
+            font-size: $font-size--main_text;
             color: $color-font--main_text ;
         }
         &-answer {
@@ -164,7 +164,7 @@
     }
     &-h1 {
         &--main{
-            font-size: 60px;
+            font-size: $font-size--main_title;
             font-weight: 800;
             color: $color-font--main_title ;
         }
