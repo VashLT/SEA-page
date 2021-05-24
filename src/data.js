@@ -512,6 +512,11 @@ const faqs = [
         answer: `El programa SEA online brinda acompañamiento académico dos semanas antes de la 
                 programación de los exámenes.`,
         id: 2
+    },
+    {
+        question: "¿Cuál es el proceso a seguir para formar parte del equipo de tutores del programa?",
+        answer: `Un tutor SEA es un estudiante destacado en el área en el cual brindará acompañamiento académico a través de tutorías, bajo la modalidad de auxiliatura docente, por lo que se requerirá ser estudiante de quinto nivel en adelante, promedio superior a xxx, y nota aprobatoria del área en la cual se desempeñará mayor a 4,0.`,
+        id: 3
     }
     
 ]

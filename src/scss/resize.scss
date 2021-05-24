@@ -312,6 +312,7 @@
                 & img {width: 25px !important;}
             }
         }
+        &-logo {max-height: 75px;}
         &-subject {
             & a {font-size: 15px}
         }
@@ -335,8 +336,13 @@
 
 @media screen and (max-height: 840px) {
     #headerFAQPage {
+        & h1 {transform: translateX(10px);}
         &::after {
             transform: translateY(20px) !important;
         }
     }
+}
+
+@media screen and (max-height: 700px) {
+    #navbar-parent {min-height: 16vh;}
 }

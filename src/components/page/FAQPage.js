@@ -5,7 +5,7 @@ import { faqs } from "../../data.js";
 
 export default function FAQPage() {
     useEffect(() => {
-        document.title = "SEA | FAQ"
+        document.title = "SEA | Preguntas frecuentes"
     }, []);
 
     return (

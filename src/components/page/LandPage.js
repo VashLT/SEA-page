@@ -7,7 +7,7 @@ import imgDark from "../../images/girl_night.png";
 
 export default function LandPage(props) {
     useEffect(() => {
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowX = "hidden";
     }, []);
 
     let mainImage;
