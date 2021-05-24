@@ -357,7 +357,8 @@
         // overflow-y: hidden;
         &:hover {
             transform: translateY(-48%);
-            box-shadow: 2px 1px 4px 0 $color-svg-bg--hover, 2px 2px 8px 0 $color-svg-bg--hover;
+            box-shadow: 0 4px 8px rgba(105, 106, 106, 0.85);
+            // box-shadow: 2px 1px 4px 0 rgb(106, 106, 106), 2px 2px 6px 0 rgb(116, 114, 114);
         }
     }
 }

@@ -126,6 +126,18 @@
     }
 }
 
+@keyframes swipe-up--responsive {
+    0% {
+        transform: translateY(70%);
+    }
+    80% {
+        transform: translateY(35%);
+    }
+    100% {
+        transform: translateY(40%);
+    }
+}
+
 
 @-webkit-keyframes fade-in {
     0% { opacity: 0; }

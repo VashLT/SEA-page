@@ -9,6 +9,10 @@ export default function Navbar(props) {
 
     const navContainerClasses = "c-nav smooth " + extraClass;
 
+    function toggleHeader() {
+        document.getElementById("navbar-parent").classList.toggle("active");
+    }
+
     const navContainer = React.createElement(
         "header",
         {
@@ -29,10 +33,6 @@ export default function Navbar(props) {
             </div>
         </nav>
     );
-
-    function toggleHeader() {
-        document.getElementById("navbar-parent").classList.toggle("active");
-    }
     
     return navContainer;
 }

@@ -107,7 +107,8 @@
 
         & .c {
             &-schedule {
-                box-shadow: 0 2px 4px 0 $color-dark_theme-hover--bg, 0 3px 8px 0 $color-dark_theme-hover--bg;
+                // box-shadow: 0 2px 4px 0 $color-dark_theme-hover--bg, 0 3px 8px 0 $color-dark_theme-hover--bg;
+                box-shadow: 0 4px 8px rgba(1,4,9,0.85);
             }
             &-stripe {
                 background-color: $color-dark_theme--schedule_stripe;

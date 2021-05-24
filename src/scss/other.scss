@@ -42,6 +42,7 @@
 
     transition: all $default-transition-time ease;
 
+
     &-hamburger {
         outline: none;
         border: none;
@@ -55,6 +56,10 @@
     &-parent.active {
         background-color: $color-navbar--hover;
     }
+}
+
+#responsive-navbar-nav.show {
+    background-color: $color-navbar--hover;
 }
 
 #mainLandPage {

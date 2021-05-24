@@ -74,6 +74,20 @@
 }
 
 @media screen and (max-width: 1200px) {
+    body {overflow-y: auto !important;}
+    #app {
+        & #responsive-navbar-nav {background-color: $color-navbar--hover;}
+    }
+    #app.dark-mode {
+        & #responsive-navbar-nav {background-color: $color-dark_theme-hover--navbar;}
+    }
+
+    #responsive-navbar-nav {
+        min-width: 100vw;
+        padding-left: 25px;
+        transform: translateX(-25px)
+    }
+
     #headerSchedulePage, #headerAreasPage, #headerFAQPage {
         padding: 0 30px !important;
         align-items: center !important;
@@ -94,8 +108,8 @@
     #footerLandPage {display: none;}
 
     #faqs {
-        padding: 5vh 0 5vh;
-        align-items: center;
+        padding: 5vh 30px 5vh;
+        align-items: flex-start;
     }
 
     .column {
@@ -119,6 +133,7 @@
                 & svg {transform: scale(1.03);}
             }
         }
+        &-question {width: 90vw !important;}
         // &-svg_background {
         //     background-size: 90vw 50vh;
         //     background-position: 50% 30%;
@@ -287,4 +302,41 @@
             transform: translateY(20px) !important;
         }
     }
+}
+
+@media screen and (max-height: 840px) and (max-width: 1500px) {
+    #headerSchedulePage {
+        &::after {transform: translateY(10px);}
+    }
+    #landPage {
+        & #mainLandPage {height: 70vh;}
+        & #footerLandPage {height: 17vh;}
+        & .btn-join {
+            font-size: 35px;
+        }
+        & .animate {
+            &-widget {
+                transform: translateY(40%);
+                animation-name: swipe-up--responsive;
+            }
+        }
+
+    }
+    & .speech-bubble {
+            &--right {&::after{margin-right: -8px;}}
+            &--left {&::after{margin-left: -7px;}}
+        }
+    & .c {
+            &-logo {max-height: 70px;}
+            &-svg_background {
+                &--land {background-size: 90% 95%;}
+                &--areas {background-size: 50% auto;}
+
+            }
+            &-btn--join {
+                & svg {transform: scale(1);}
+            }
+            &-area {min-height: 600px;}
+        }
+
 }
