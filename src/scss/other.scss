@@ -47,6 +47,10 @@
         border: none;
         & span {transform: scale(1.2);}
     }
+
+    &-parent.active {
+        background-color: $color-navbar--hover;
+    }
 }
 
 #mainLandPage {

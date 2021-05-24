@@ -3,7 +3,7 @@ import {areas} from "../../data.js";
 import Area from "../element/Area";
 import BubbleLogo from "../element/BubbleLogo";
 
-export default function AreasPage() {
+export default function AreasPage(props) {
     useEffect(() => {
         document.title = "SEA | Áreas"
     }, []);

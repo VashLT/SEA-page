@@ -1,32 +1,27 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Navbar from "../element/Navbar";
 import DiscordWidget from "../element/DiscordWidget";
-import ThemeSwitcher from "../element/ThemeSwitcher";
-import img1 from "../../images/tutoria.png";
-// import img2 from "../../images/conference.png";
+import imgLight from "../../images/tutoria.png";
+import imgDark from "../../images/girl_night.png";
 
 
-export default function LandPage() {
+export default function LandPage(props) {
     useEffect(() => {
         document.body.style.overflow = "hidden";
     }, []);
-    const [theme, setTheme] = useState("dark");
-    function toggleTheme() {
-        if (theme === "light") {
-            setTheme("dark");
-        } else {setTheme("light")}
-    }
-    function darkTheme() {
-        toggleTheme();
-        document.getElementById("app").classList.toggle("dark-mode");
-        document.getElementById("navbar-parent").classList.toggle("dark-mode");
-    }
+
+    let mainImage;
+
+    console.log(props.theme)
+    if (props.theme === "light") {
+        mainImage = imgLight;
+    } else mainImage = imgDark;
+
+    console.log("props in LandPage", props);
+
     return (
         <div id="landPage" className="smooth">
-            <ThemeSwitcher themeFunction={ darkTheme }/>
-            <header className="c-nav smooth dark-mode" id="navbar-parent">
-                <Navbar />
-            </header>
+            <Navbar {...props} />
             <main className="c-svg_background--land smooth">
                 <div id="mainLandPage">
                     <div className="c-content--main animate-content">
@@ -43,12 +38,12 @@ export default function LandPage() {
                         </div>
                     </div>
                     <div className="c-image--main animate-image">
-                        <img className="rounded" src={ img1 } alt="SEA Online" />
+                        <img className="rounded" src={ mainImage } alt="SEA Online" />
                     </div>
                 </div>
                 <div id="footerLandPage">
                     <div className="c-widget smooth--widget animate-widget">
-                        <DiscordWidget theme={theme} />
+                        <DiscordWidget theme={props.theme} />
                     </div>
                 </div>
             </main>

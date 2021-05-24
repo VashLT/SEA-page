@@ -71,11 +71,6 @@
     .horario, .c-select--schedule, #headerSchedulePage {
         padding: 1vh 8vw !important;
     }
-
-    .c-nav nav#navbar .show {
-        background-color: $color-navbar--hover !important;
-    }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -193,7 +188,20 @@
 
     .c {
         &-question {width: 90vw !important;}
-        // &-svg_background {background-size: 85vw 40vh;}
+        &-theme_switcher {
+            // bottom: 0;
+            top: 85%;
+            height: 70px;
+
+            // border-radius: $radius--theme_switcher $radius--theme_switcher 0 0;
+            // &:hover {
+            //     height: $height-hover--theme_switcher;
+            // }
+            // & svg {
+            //     margin-left: auto;
+            //     margin-top: 25px;
+            // }
+        }
     }
 }
 // mobiles oriented
@@ -205,7 +213,7 @@
         }
         & h1 {
             font-size: 25px !important;
-            width: 200px;
+            width: 45vw;
 
         }
         justify-content: space-between !important;
@@ -271,4 +279,12 @@
         }
     }
     .nav-item-spaced {padding-left: 2vw !important;}
+}
+
+@media screen and (max-height: 840px) {
+    #headerFAQPage {
+        &::after {
+            transform: translateY(20px) !important;
+        }
+    }
 }

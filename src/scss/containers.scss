@@ -246,7 +246,6 @@
             background-repeat: no-repeat;
             background-position: center top;
 
-            opacity: 0.8;
             position: relative;
             &--land {
                 @extend .c-svg_background;
@@ -313,12 +312,12 @@
     &-theme_switcher {
         @extend .c;
 
-        position: absolute;
+        position: fixed;
         top: 20%;
         right: 0;
         background-color: white;
         width: $width--theme_switcher;
-        height: 80px;
+        height: $height--theme_switcher;
 
         border-radius: $radius--theme_switcher 0 0 $radius--theme_switcher;
         box-shadow: 0 1px 2px 0 #c0c0c0, 0 2px 4px 0 #c0bfbf;
@@ -327,13 +326,13 @@
 
         z-index: 200;
 
-        transition: width 0.2s ease-in;
+        transition: width 0.2s ease-in, background-color $time-dark_mode-transition, top 0.5s ease-in, height 0.3s ease-out;
 
         &:hover {
             width: $width-hover--theme_switcher;
             box-shadow: 0 2px 4px 0 #c0c0c0, 0 3px 8px 0 #c0bfbf;
             cursor: pointer;
-            & svg {fill: gray;}
+            & svg {fill: rgb(248, 224, 38);}
 
             // &::after {
             //     content:"";
@@ -348,6 +347,7 @@
         }
 
         & svg {
+            fill: rgb(255, 225, 0);
             margin-left: 25px;
         }
 

@@ -1,20 +1,24 @@
+$test: #3ba13b;
+
+// defaults
+
 $color-uis--green: rgb(103, 185, 62);
 $color-sea--blue: rgb(41, 135, 175);
 
 $color-sea-bubble: #c1f2b8;
 $color-join-btn: $color-sea--blue;
 
+// navbar
 $color-nav-link--hover: #7A6C5D;
 $color-nav-link: #665b4e;
 
 $color-navbar--hover: #e6e7e1;
 
-$color-hover-bar: #859ce7;
 
-$color-header-hover-bar: $color-sea--blue;
+$color-hover-bar: #859ce7;
+$color-header-hover-bar: #7D80DA;
 
 $color-bg: rgb(241, 242, 235);
-
 $color-bg--hover:rgb(172, 168, 162);
 $color-svg-bg--hover:rgb(66, 117, 40);
 
@@ -23,6 +27,8 @@ $color-stripe-disabled: rgb(133, 131, 131);
 $color-stripe--hover: rgb(226, 241, 250);
 
 $color-blue-link: #859ce7;
+$color-link--blue: #859ce7;
+$color-hover--blue_link: #798dd1;
 
 $color-soft--hover: rgb(230, 230, 233);
 
@@ -46,25 +52,59 @@ $color-font--faq-answer: #5C5346;
 
 // dark mode
 
+// defaults
 $color-dark_theme--blue: #032343;
 
-$color-dark_theme--bg: #36393F;
-$color-dark_theme-hover--navbar: #202225;
+$color-dark_theme-font--p: #eeeeee;
+
+$color-dark_theme--border_container: #666c74;
+
+$color-dark_theme--bg: #222831;
+$color-dark_theme-hover--bg: #212730;
+
+// navbar
+$color-dark_theme-hover--navbar: #23272a;
 $color-dark_theme--navbar_items: #ededed;
 $color-dark_theme-hover--navbar_items: #A09BE7;
 $color-dark_theme-hover--navbar_items_bar: white;
 
-$color-dark_theme--main_text: #ffffff;
-$color-dark_theme--main_title: #99aab5;
+$color-dark_theme--main_text: #eeeeee;
+// $color-dark_theme--main_title: #a5e1ad;
+$color-dark_theme--main_title: #caf7e3;
+
+$color-dark_theme-header--hover_bar: #99aab5;
+$color-dark_theme-font--header: #eeeeee;
+
+// join button
+
+$color-dark_theme--btn_join: #184d47;
+
+// schedule page
+
+$color-dark_theme--schedule_stripe: rgb(35, 37, 43);
+$color-dark_theme--schedule_stripe_border: rgb(78, 82, 94);
+$color-dark_theme-hover--schedule_stripe: rgb(56, 59, 68);
+
+$color-dark_theme-font--tutor: #eeeeee;
+$color-dark_theme-font--time: rgb(187, 203, 214);
+
+$color-dark_theme--select_area: #393e46;
+$color-dark_theme-hover--select_area: #494f58;;
+
+$color-dark_theme-hover--selecteable_areas: #2f333a;
+
+// faqs page
+$color-dark_theme--faq_question: #393e46;
+$color-dark_theme--faq_question_body: #4b515c;
+
+
 
 $color-theme_switcher--dark: #111;
 $color-theme_switcher-icon--dark: rgb(247, 208, 54);
 $color-theme_switcher-icon-hover--dark: rgb(248, 216, 85);
 
-$color-dark_theme--bubble_logo: $color-dark_theme--blue;
+$color-dark_theme--bubble_logo: #2b343f;
 $color-dark_theme--title_logo: #fff;
-
-$color-dark_theme-hover--bg: #37354e;
 
 // 
 
