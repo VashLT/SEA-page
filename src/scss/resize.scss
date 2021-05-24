@@ -324,7 +324,7 @@
         }
         &-btn--join {
                 & a {
-                    & svg {transform: scale(0.8) !important;}    
+                    & svg {transform: scale(0.8);}    
                 }
         }
         &-svg_background--land {
@@ -363,5 +363,19 @@
         &-widget {
             transform: translateY(10%);
         }
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .btn-join {font-size: 20px !important;}
+}
+
+@media screen and (max-width: 320px) { 
+    .btn-join {
+        font-size: 15px !important;
+    }
+
+    .c-btn--join {
+        & svg {transform: scale(0.7) !important;}
     }
 }
