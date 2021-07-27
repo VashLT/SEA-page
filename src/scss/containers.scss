@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
 
-
     align-items: center;
     justify-content: center;
 
@@ -24,7 +23,7 @@
 
         margin-bottom: 30px;
         margin-right: 2%;
-    
+
         transition: all 0.2s ease;
 
         &:hover {
@@ -53,7 +52,6 @@
                 transform: scale(1.01);
                 cursor: pointer;
             }
-
         }
 
         &--body {
@@ -68,7 +66,6 @@
 
             justify-content: space-evenly;
             align-items: flex-start;
-
         }
     }
 
@@ -78,7 +75,9 @@
             @extend .c-btn;
             min-width: 150px;
 
-            & svg {transform: scale(1.2);}
+            & svg {
+                transform: scale(1.2);
+            }
 
             &:hover {
                 transform: scale(1.02);
@@ -173,28 +172,17 @@
     &-nav {
         @extend .c;
 
-        position: absolute;
-        left: 0;
-        top: 0;
-
         border-radius: 0 !important;
-
         justify-content: flex-start;
 
-        min-height: $navbar--height + 2vh;
         min-width: 100%;
         width: 100%;
         padding: 0 10vw;
 
         z-index: 100;
 
-        &:hover {background-color: $color-navbar--hover;}
-
-        &::before {
-            content: "";
-            min-height: 2vh;
-            min-width: 100vw;
-            width: 100%;
+        &:hover {
+            background-color: $color-navbar--hover;
         }
     }
 
@@ -250,7 +238,7 @@
             &--land {
                 @extend .c-svg_background;
                 background-image: url("../images/bg-landPage.png");
-                background-size: 90% 75%;
+                background-size: 90% 90%;
             }
 
             &--areas {
@@ -260,7 +248,6 @@
                 background-size: 50% 70%;
                 background-attachment: fixed;
             }
-
         }
     }
 
@@ -290,16 +277,15 @@
 
             max-width: 100%;
 
-
-            min-height: 68px !important;    
+            min-height: 68px !important;
             height: auto;
-
-
         }
 
         &--body {
             background-color: $color-question-body;
-            &:hover {cursor: default;}
+            &:hover {
+                cursor: default;
+            }
         }
 
         &:hover {
@@ -320,45 +306,39 @@
         height: $height--theme_switcher;
 
         border-radius: $radius--theme_switcher 0 0 $radius--theme_switcher;
-        box-shadow: 0 1px 2px 0 #c0c0c0, 0 2px 4px 0 #c0bfbf;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
         align-items: flex-start;
 
         z-index: 200;
 
-        transition: width 0.2s ease-in, background-color $time-dark_mode-transition, top 0.5s ease-in, height 0.3s ease-out;
+        transition: width 0.2s ease-in, background-color $time-dark_mode-transition, top 0.5s ease-in,
+            height 0.3s ease-out;
 
         &:hover {
             width: $width-hover--theme_switcher;
-            box-shadow: 0 2px 4px 0 #c0c0c0, 0 3px 8px 0 #c0bfbf;
             cursor: pointer;
-            & svg {fill: rgb(248, 224, 38);}
-
-            // &::after {
-            //     content:"";
-            //     position: absolute;
-            //     margin-left: 25px;
-            //     top: 20%;
-            //     right: $width--theme_switcher;
-            //     height: inherit;
-            //     border-radius: 50%;
-            //     background-color: $color-soft--hover;
-            // }
+            & svg {
+                fill: rgb(248, 224, 38);
+            }
         }
 
         & svg {
-            fill: rgb(255, 225, 0);
+            fill: hsl(53, 100%, 50%);
+            stroke: hsl(53, 100%, 30%);
+            stroke-width: 0.2px;
             margin-left: 25px;
         }
-
     }
 
-    &-widget { 
-        // overflow-y: hidden;
+    &-widget {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        transform: translateY(100%);
+        will-change: transform;
         &:hover {
-            transform: translateY(-48%);
             box-shadow: 0 4px 8px rgba(105, 106, 106, 0.85);
-            // box-shadow: 2px 1px 4px 0 rgb(106, 106, 106), 2px 2px 6px 0 rgb(116, 114, 114);
         }
     }
 }
@@ -375,7 +355,7 @@
 
         text-align: center;
         min-width: $schedule-col-width--min;
-        width: $schedule-col-width; 
+        width: $schedule-col-width;
         border-right: solid 2px rgb(208, 206, 206);
     }
     &--day {
@@ -408,7 +388,7 @@
     padding: 10px 50px;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         top: 50%;
@@ -419,7 +399,7 @@
         border-right: 0;
         border-bottom: 0;
         margin-top: 10px;
-	    margin-right: -15px;
+        margin-right: -15px;
     }
 
     &--right {
@@ -432,7 +412,7 @@
         margin-left: auto;
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             top: 50%;
@@ -443,7 +423,7 @@
             border-left: 0;
             border-bottom: 0;
             margin-top: 10px;
-	        margin-left: -12px;
+            margin-left: -12px;
         }
     }
 }

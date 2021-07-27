@@ -17,9 +17,12 @@
             }
         }
     }
-    & #landPage, #areasPage, #schedulePage, #faqsPage {background-color: $color-dark_theme--bg;}
+    background-color: $color-dark_theme--bg;
+
     & #landPage {
-        .btn-join {background-color: $color-dark_theme--btn_join;}
+        .btn-join {
+            background-color: $color-dark_theme--btn_join;
+        }
         & .c {
             &-btn--join {
                 &:hover {
@@ -27,17 +30,23 @@
                 }
             }
             &-nav {
-                &:hover {background-color: $color-dark_theme-hover--navbar;}
+                &:hover {
+                    background-color: $color-dark_theme-hover--navbar;
+                }
             }
-            &-svg_background--land {background-image: url("../images/bg-landPage-dark.png");}
+            &-svg_background--land {
+                background-image: url("../images/bg-landPage-dark.png");
+            }
             &-widget {
-                &:hover {box-shadow: 2px 1px 4px 0 $color-dark_theme-hover--bg, 2px 2px 8px 0 $color-dark_theme-hover--bg;}
+                &:hover {
+                    box-shadow: 2px 1px 4px 0 $color-dark_theme-hover--bg, 2px 2px 8px 0 $color-dark_theme-hover--bg;
+                }
             }
         }
         & .typo {
             &-h1--main {
                 transition: background-color $time-dark_mode-transition;
-                color: $color-dark_theme--main_title
+                color: $color-dark_theme--main_title;
             }
             &-p--main {
                 transition: background-color $time-dark_mode-transition;
@@ -45,17 +54,23 @@
             }
             &-nav {
                 &-link {
-                    &:hover {color: $color-dark_theme-hover--navbar_items;}
+                    &:hover {
+                        color: $color-dark_theme-hover--navbar_items;
+                    }
                 }
                 &-title {
                     color: $color-dark_theme--title_logo;
-                    &:hover {color: $color-dark_theme--title_logo;}
+                    &:hover {
+                        color: $color-dark_theme--title_logo;
+                    }
                 }
             }
         }
 
         & .underlined-link {
-            &::after{border-bottom-color: $color-dark_theme-hover--navbar_items_bar;}
+            &::after {
+                border-bottom-color: $color-dark_theme-hover--navbar_items_bar;
+            }
         }
 
         & button.navbar-toggler {
@@ -69,71 +84,123 @@
         }
 
         & #navbar {
-            &-parent.active {background-color: $color-dark_theme-hover--navbar;}
+            &-parent.active {
+                background-color: $color-dark_theme-hover--navbar;
+            }
         }
+    }
+
+    .c-nav {
+        &:hover {
+            background-color: $color-dark_theme-hover--navbar;
+        }
+        & #navbar {
+            & .typo-nav-link {
+                color: $color-dark_theme--navbar_items;
+            }
+        }
+    }
+    .c-theme_switcher {
+        background-color: $color-theme_switcher--dark;
     }
 
     & #areasPage {
         & #headerAreasPage {
-            & h1 {color: $color-dark_theme-font--header;}
-            &::after {background-color: $color-dark_theme-header--hover_bar;}
+            & h1 {
+                color: $color-dark_theme-font--header;
+            }
+            &::after {
+                background-color: $color-dark_theme-header--hover_bar;
+            }
         }
         & .c {
             &-area {
-                &:hover {box-shadow: 0 2px 4px 0 $color-dark_theme-hover--bg, 0 6px 8px 0 $color-dark_theme-hover--bg;}
+                &:hover {
+                    box-shadow: 0 2px 4px 0 $color-dark_theme-hover--bg, 0 6px 8px 0 $color-dark_theme-hover--bg;
+                }
             }
-            &-svg_background--areas {background-image: url("../images/bg-areasPage-dark.png");}
+            &-svg_background--areas {
+                background-image: url("../images/bg-areasPage-dark.png");
+            }
         }
     }
 
     & #schedulePage {
         & #headerSchedulePage {
-            & h1 {color: $color-dark_theme-font--header;}
-            &::after {background-color: $color-dark_theme-header--hover_bar;}
+            & h1 {
+                color: $color-dark_theme-font--header;
+            }
+            &::after {
+                background-color: $color-dark_theme-header--hover_bar;
+            }
         }
-        & #selectArea, .select-menu {
+        & #selectArea,
+        .select-menu {
             background-color: $color-dark_theme--select_area;
             border-bottom: solid 2px $color-dark_theme--border_container;
         }
-        & #selectArea, .select-area {color: $color-dark_theme-font--tutor;}
+        & #selectArea,
+        .select-area {
+            color: $color-dark_theme-font--tutor;
+        }
         & .select-area {
             border-bottom: solid 1px $color-dark_theme--border_container;
-            &:hover{background-color: $color-dark_theme-hover--selecteable_areas;}
+            &:hover {
+                background-color: $color-dark_theme-hover--selecteable_areas;
+            }
         }
-        & .select-menu {box-shadow: 0 16px 32px rgba(1,4,9,0.85);}
+        & .select-menu {
+            box-shadow: 0 16px 32px rgba(1, 4, 9, 0.85);
+        }
         & #selectArea {
-            &:hover {background-color: $color-dark_theme-hover--select_area;}
+            &:hover {
+                background-color: $color-dark_theme-hover--select_area;
+            }
         }
 
         & .c {
             &-schedule {
                 // box-shadow: 0 2px 4px 0 $color-dark_theme-hover--bg, 0 3px 8px 0 $color-dark_theme-hover--bg;
-                box-shadow: 0 4px 8px rgba(1,4,9,0.85);
+                box-shadow: 0 4px 8px rgba(1, 4, 9, 0.85);
             }
             &-stripe {
                 background-color: $color-dark_theme--schedule_stripe;
                 border-bottom: solid 2px $color-dark_theme--schedule_stripe_border;
-                &:hover {background-color: $color-dark_theme-hover--schedule_stripe;}
+                &:hover {
+                    background-color: $color-dark_theme-hover--schedule_stripe;
+                }
             }
         }
         & .typo {
-            &-p--schedule-tutor {color: $color-dark_theme-font--tutor;}
-            &-p--schedule-time {color: $color-dark_theme-font--time;}
+            &-p--schedule-tutor {
+                color: $color-dark_theme-font--tutor;
+            }
+            &-p--schedule-time {
+                color: $color-dark_theme-font--time;
+            }
         }
         & .column {
-            &--time {border-right: solid 2px $color-dark_theme--schedule_stripe_border;}
+            &--time {
+                border-right: solid 2px $color-dark_theme--schedule_stripe_border;
+            }
         }
     }
 
     & #faqsPage {
         & #headerFAQPage {
-            & h1 {color: $color-dark_theme-font--header;}
-            &::after {background-color: $color-dark_theme-header--hover_bar;}
+            & h1 {
+                color: $color-dark_theme-font--header;
+            }
+            &::after {
+                background-color: $color-dark_theme-header--hover_bar;
+            }
         }
         & .c {
             &-question {
                 background-color: $color-dark_theme--faq_question;
-                &:hover {box-shadow: 1px 2px 4px 0 $color-dark_theme-hover--bg, 1px 4px 8px 0 $color-dark_theme-hover--bg;}
+                &:hover {
+                    box-shadow: 1px 2px 4px 0 $color-dark_theme-hover--bg, 1px 4px 8px 0 $color-dark_theme-hover--bg;
+                }
                 &--header {
                     background-color: $color-dark_theme--faq_question;
                     border-bottom: solid 2px $color-dark_theme--border_container;
@@ -142,14 +209,18 @@
                     background-color: $color-dark_theme--faq_question_body;
                 }
             }
-            &-svg_background--areas {background-image: url("../images/bg-areasPage-dark.png");}
+            &-svg_background--areas {
+                background-image: url("../images/bg-areasPage-dark.png");
+            }
         }
     }
 
     & .typo {
         &-p {
             color: $color-dark_theme-font--p;
-            &-answer {color: $color-dark_theme-font--p;}
+            &-answer {
+                color: $color-dark_theme-font--p;
+            }
         }
     }
 }

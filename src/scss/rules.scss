@@ -4,9 +4,8 @@
 .header-base {
     @extend .c;
 
-    padding: 1vh 4vw 1vh 0px;   
+    padding: 1vh 4vw 1vh 0px;
     position: relative;
-
 
     flex-direction: row !important;
 
@@ -22,7 +21,7 @@
     }
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 25%;
         width: $title-overline-width;
@@ -54,9 +53,13 @@
     justify-content: space-evenly !important;
 }
 
-#headerSchedulePage { @extend #headerAreasPage;}
+#headerSchedulePage {
+    @extend #headerAreasPage;
+}
 
-#headerFAQPage { @extend #headerAreasPage;}
+#headerFAQPage {
+    @extend #headerAreasPage;
+}
 
 #areasSchedule {
     width: 100vw;
@@ -80,13 +83,13 @@
 
         width: 25vw;
         height: 10vh;
+        min-height: 60px;
 
         color: white !important;
-        font-size: 45px;
+        font-size: clamp(20px, 4vh, 40px);
         font-weight: 500;
-        
-        border-radius: $btn-radius;
 
+        border-radius: $btn-radius;
     }
 }
 
@@ -104,7 +107,8 @@
 
 .typo {
     &-all {
-        & h1, p {
+        & h1,
+        p {
             color: $color-font;
         }
     }
@@ -114,20 +118,22 @@
             font-weight: 600;
             color: $color-nav-link;
 
-            &:hover {color: $color-nav-link--hover ;}
+            &:hover {
+                color: $color-nav-link--hover;
+            }
         }
         &-title {
             text-decoration: none;
             font-size: 40px;
             font-weight: 600;
-            color: white ;
+            color: white;
             font-family: $font-family;
         }
     }
     &-p {
         font-size: 25px;
         font-weight: 500;
-        color: $color-font--faq-title ;
+        color: $color-font--faq-title;
         &--schedule {
             @extend .typo-p;
             margin: 0;
@@ -139,7 +145,7 @@
                 @extend .typo-p--schedule;
                 font-size: 30px;
                 text-align: center;
-                color: $color-font--schedule_header ;
+                color: $color-font--schedule_header;
             }
             &-time {
                 @extend .typo-p--schedule;
@@ -148,25 +154,25 @@
             &-tutor {
                 @extend .typo-p--schedule;
                 font-size: 20px;
-                color: $color-font--schedule_tutor ;
+                color: $color-font--schedule_tutor;
             }
         }
         &--main {
             text-align: justify;
             font-size: $font-size--main_text;
-            color: $color-font--main_text ;
+            color: $color-font--main_text;
         }
         &-answer {
-            color: $color-font--faq-answer ;
+            color: $color-font--faq-answer;
             font-size: 20px;
             font-weight: 400;
         }
     }
     &-h1 {
-        &--main{
+        &--main {
             font-size: $font-size--main_title;
             font-weight: 800;
-            color: $color-font--main_title ;
+            color: $color-font--main_title;
         }
     }
     &-a {
@@ -177,6 +183,3 @@
         }
     }
 }
-
-
-  

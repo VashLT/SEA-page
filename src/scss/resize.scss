@@ -1,6 +1,8 @@
 @media screen and (max-width: 1600px) {
     .c {
-        &-nav {padding: 0 5vw;}
+        &-nav {
+            padding: 0 5vw;
+        }
     }
 }
 
@@ -10,9 +12,15 @@
     }
 
     #headerAreasPage {
-        &::after {min-width: 560px;}
+        &::after {
+            min-width: 560px;
+        }
     }
-     #headerFAQPage {&::after {min-width: 640px;}}
+    #headerFAQPage {
+        &::after {
+            min-width: 640px;
+        }
+    }
 
     .typo {
         &-nav {
@@ -21,7 +29,9 @@
             }
         }
         &-h1 {
-            &--main {font-size: 4vw;}
+            &--main {
+                font-size: 4vw;
+            }
         }
         &-p {
             font-size: 1.7vw;
@@ -29,8 +39,13 @@
                 font-size: 2.5vw;
             }
             &--schedule {
-                &-header {font-size: 1.8vw;}
-                &-time, &-tutor {font-size: 1.5vw;}
+                &-header {
+                    font-size: 1.8vw;
+                }
+                &-time,
+                &-tutor {
+                    font-size: 1.5vw;
+                }
             }
         }
     }
@@ -46,15 +61,21 @@
         &-nav {
             padding: 0 10px;
         }
-        &-svg_background--areas {background-size: 80% auto;}
+        &-svg_background--areas {
+            background-size: 80% auto;
+        }
     }
 
     .animate {
-        &-nav-item {animation-delay: 0.2s;}
+        &-nav-item {
+            animation-delay: 0.2s;
+        }
     }
 
     .column {
-        &-header, &--day, &--time {
+        &-header,
+        &--day,
+        &--time {
             min-width: 120px;
         }
     }
@@ -65,30 +86,40 @@
     }
     .logo-link {
         opacity: 0;
-        display: none; 
+        display: none;
     }
 
-    .horario, .c-select--schedule, #headerSchedulePage {
+    .horario,
+    .c-select--schedule,
+    #headerSchedulePage {
         padding: 1vh 8vw !important;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    body {overflow-y: auto !important;}
+    body {
+        overflow-y: auto !important;
+    }
     #app {
-        & #responsive-navbar-nav {background-color: $color-navbar--hover;}
+        & #responsive-navbar-nav {
+            background-color: $color-navbar--hover;
+        }
     }
     #app.dark-mode {
-        & #responsive-navbar-nav {background-color: $color-dark_theme-hover--navbar;}
+        & #responsive-navbar-nav {
+            background-color: $color-dark_theme-hover--navbar;
+        }
     }
 
     #responsive-navbar-nav {
         min-width: 100vw;
         padding-left: 25px;
-        transform: translateX(-25px)
+        transform: translateX(-25px);
     }
 
-    #headerSchedulePage, #headerAreasPage, #headerFAQPage {
+    #headerSchedulePage,
+    #headerAreasPage,
+    #headerFAQPage {
         padding: 0 30px !important;
         align-items: center !important;
         justify-content: space-between !important;
@@ -96,8 +127,10 @@
             font-size: 4vw;
         }
     }
-    #headerFAQPage{
-        &::after{ min-width: 50vw; }
+    #headerFAQPage {
+        &::after {
+            min-width: 50vw;
+        }
     }
     #mainLandPage {
         padding-top: 50px !important;
@@ -105,55 +138,73 @@
         height: auto !important;
     }
 
-    #footerLandPage {display: none;}
-
     #faqs {
         padding: 5vh 30px 5vh;
         align-items: flex-start;
     }
 
     .column {
-        &-header, &--day, &--time {
+        &-header,
+        &--day,
+        &--time {
             min-width: 8vw;
         }
     }
-    .horario, .c-select--schedule{
+    .horario,
+    .c-select--schedule {
         padding: 1vh 20px !important;
     }
     .c {
         &-select--schedule {
-           padding: 2vh 20px;
+            padding: 2vh 20px;
         }
         &-content--main {
             width: 80%;
         }
         &-btn {
-            & svg {transform: scale(1.0);}
+            & svg {
+                transform: scale(1);
+            }
             &:hover {
-                & svg {transform: scale(1.03);}
+                & svg {
+                    transform: scale(1.03);
+                }
             }
         }
-        &-question {width: 90vw !important;}
-        // &-svg_background {
-        //     background-size: 90vw 50vh;
-        //     background-position: 50% 30%;
-        // }
+        &-question {
+            width: 90vw !important;
+        }
+        &-widget {
+            display: none;
+        }
     }
     .typo {
         &-h1 {
             &--main {
-                font-size: 50px;} 
-                text-align: center;
+                font-size: 50px;
+            }
+            text-align: center;
         }
         &-p {
-            &-answer {font-size: 1.4vw;}
-            &--main {font-size: 30px;}
+            &-answer {
+                font-size: 1.4vw;
+            }
+            &--main {
+                font-size: 30px;
+            }
             &--schedule {
-                &-header {font-size: 2vw !important;}
-                &-time, &-tutor {font-size: 1.5vw !important;}
+                &-header {
+                    font-size: 2vw !important;
+                }
+                &-time,
+                &-tutor {
+                    font-size: 1.5vw !important;
+                }
             }
         }
-        &-a {font-size: 1.4vw;}
+        &-a {
+            font-size: 1.4vw;
+        }
     }
     .btn {
         &-join {
@@ -167,63 +218,95 @@
 
 @media screen and (max-height: 840px) and (max-width: 1500px) {
     #headerSchedulePage {
-        &::after {transform: translateY(10px);}
+        &::after {
+            transform: translateY(10px);
+        }
     }
     #landPage {
         overflow-y: auto;
-        & #mainLandPage {height: 70vh;}
-        & #footerLandPage {height: 17vh;}
-        & .animate {
-            &-widget {
-                transform: translateY(45%);
-                animation-name: swipe-up--responsive;
-            }
+        & #mainLandPage {
+            height: 70vh;
         }
-
+        & #footerLandPage {
+            height: 17vh;
+        }
     }
     & .speech-bubble {
-            &--right {&::after{margin-right: -8px;}}
-            &--left {&::after{margin-left: -7px;}}
-        }
-    & .c {
-            &-logo {max-height: 70px;}
-            &-svg_background {
-                &--land {background-size: 90% 95%;}
-                &--areas {background-size: 50% auto;}
-
+        &--right {
+            &::after {
+                margin-right: -8px;
             }
-            &-btn--join {
-                & svg {transform: scale(1);}
-            }
-            &-area {min-height: 600px;}
         }
-    #schedulePage {
-        & #areasSchedule {overflow: auto;}
+        &--left {
+            &::after {
+                margin-left: -7px;
+            }
+        }
     }
-
+    & .c {
+        &-logo {
+            max-height: 80px;
+        }
+        &-svg_background {
+            &--land {
+                background-size: 90% 95%;
+            }
+            &--areas {
+                background-size: 50% auto;
+            }
+        }
+        &-btn--join {
+            & svg {
+                transform: scale(1);
+            }
+        }
+        &-area {
+            min-height: 600px;
+        }
+    }
+    #schedulePage {
+        & #areasSchedule {
+            overflow: auto;
+        }
+    }
 }
 
-@media screen and (max-width: 1000px)  {
+@media screen and (max-width: 1000px) {
     #landPage {
-        & main {justify-content: flex-start !important;}
+        & main {
+            justify-content: flex-start !important;
+        }
     }
     #headerAreasPage {
         align-items: center !important;
-        & h1 { font-size: 4vw;}
+        & h1 {
+            font-size: 4vw;
+        }
 
-        &::after {min-width: 50vw;}
-    
+        &::after {
+            min-width: 50vw;
+        }
     }
     #headerSchedulePage {
         align-items: center !important;
-        h1 { font-size: 40px; }
-        &::after {min-width: 60vw;}
+        h1 {
+            font-size: 40px;
+        }
+        &::after {
+            min-width: 60vw;
+        }
     }
     #headerFAQPage {
-        h1 { font-size: 4vw; }
-        &::after {min-width: 55vw;}
+        h1 {
+            font-size: 4vw;
+        }
+        &::after {
+            min-width: 55vw;
+        }
     }
-    #selectArea, .select-area, .select-menu {
+    #selectArea,
+    .select-area,
+    .select-menu {
         font-size: 2.5vw;
         min-width: 250px !important;
         &::before {
@@ -231,16 +314,26 @@
             height: 20px;
         }
     }
-    .select-area { min-width: 240px !important; }
+    .select-area {
+        min-width: 240px !important;
+    }
 
     .typo {
-        &-p {font-size: 18px;}
-        &-p-answer {font-size: 15px;}
-        &-a {font-size: 15px;}
+        &-p {
+            font-size: 18px;
+        }
+        &-p-answer {
+            font-size: 15px;
+        }
+        &-a {
+            font-size: 15px;
+        }
     }
 
     .c {
-        &-question {width: 90vw !important;}
+        &-question {
+            width: 90vw !important;
+        }
         &-theme_switcher {
             // bottom: 0;
             top: 85%;
@@ -259,7 +352,9 @@
 }
 // mobiles oriented
 @media screen and (max-width: 800px) {
-    #headerFAQPage, #headerSchedulePage, #headerAreasPage {
+    #headerFAQPage,
+    #headerSchedulePage,
+    #headerAreasPage {
         &::after {
             position: absolute !important;
             transform: translateY(10px) !important;
@@ -267,7 +362,6 @@
         & h1 {
             font-size: 25px !important;
             width: 45vw;
-
         }
         justify-content: space-between !important;
         padding: 0 $margin-header-mobile !important;
@@ -279,24 +373,41 @@
         transform: scale(0.8) !important;
         &:hover {
             transform: scale(0.85) !important;
-
         }
     }
-    .horario, .c-select--schedule {padding: 1vh 0px !important;}
-    a.typo-p {font-size: 16px;}
+    .horario,
+    .c-select--schedule {
+        padding: 1vh 0px !important;
+    }
+    a.typo-p {
+        font-size: 16px;
+    }
 
-    #areasSchedule {overflow: auto;}
-    
+    #areasSchedule {
+        overflow: auto;
+    }
+
     .typo {
-        &-h1--main {font-size: 8vw !important;}
+        &-h1--main {
+            font-size: 8vw !important;
+        }
         &-p {
-            &--main {font-size: 5vw !important;}
+            &--main {
+                font-size: 5vw !important;
+            }
             &--schedule {
-                &-header {font-size: 13px !important;}
-                &-time, &-tutor {font-size: 12px !important;}
+                &-header {
+                    font-size: 13px !important;
+                }
+                &-time,
+                &-tutor {
+                    font-size: 12px !important;
+                }
             }
         }
-        &-nav-link {font-size: 20px !important;}
+        &-nav-link {
+            font-size: 20px !important;
+        }
     }
 
     .btn-join {
@@ -309,35 +420,51 @@
             width: 220px;
             min-width: 220px;
             &--header {
-                & a {font-size: 20px;}
-                & img {width: 25px !important;}
+                & a {
+                    font-size: 20px;
+                }
+                & img {
+                    width: 25px !important;
+                }
             }
         }
-        &-logo {max-height: 75px;}
+        &-logo {
+            max-height: 75px;
+        }
         &-subject {
-            & a {font-size: 15px}
+            & a {
+                font-size: 15px;
+            }
         }
         &-image {
             &--main {
-                & img {min-width: 70vw;}
+                & img {
+                    min-width: 70vw;
+                }
             }
         }
         &-btn--join {
-                & a {
-                    & svg {transform: scale(0.8);}    
+            & a {
+                & svg {
+                    transform: scale(0.8);
                 }
+            }
         }
         &-svg_background--land {
             background-position: 50% 20%;
             background-size: 90% 45%;
         }
     }
-    .nav-item-spaced {padding-left: 2vw !important;}
+    .nav-item-spaced {
+        padding-left: 2vw !important;
+    }
 }
 
 @media screen and (max-height: 840px) {
     #headerFAQPage {
-        & h1 {transform: translateX(10px);}
+        & h1 {
+            transform: translateX(10px);
+        }
         &::after {
             transform: translateY(20px) !important;
         }
@@ -345,16 +472,32 @@
 }
 
 @media screen and (max-height: 700px) {
-    #navbar-parent {min-height: 16vh;}
+    #navbar-parent {
+        min-height: 16vh;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    & .animate {
+        &-widget {
+            animation-name: swipe-up--responsive;
+        }
+    }
 }
 
 @media screen and (max-height: 750px) and (max-width: 1500px) {
     #landPage {
         & .typo {
-            &-h1--main {font-size: 3.5vw;}
-            &-p--main {font-size: 2vw;}
+            &-h1--main {
+                font-size: 3.5vw;
+            }
+            &-p--main {
+                font-size: 2vw;
+            }
         }
-        & .btn-join {font-size: 2.7vw;}
+        & .btn-join {
+            font-size: 2.7vw;
+        }
     }
 }
 
@@ -366,22 +509,28 @@
     }
 }
 
-@media (max-height: 1100px) and (max-width: 800px) { 
+@media (max-height: 1100px) and (max-width: 800px) {
     .speech-bubble--right {
-        &::after {margin-right: -10px;}
+        &::after {
+            margin-right: -10px;
+        }
     }
 }
 
-@media screen and (max-width: 500px) { 
-    .btn-join {font-size: 20px !important;}
+@media screen and (max-width: 500px) {
+    .btn-join {
+        font-size: 20px !important;
+    }
 }
 
-@media screen and (max-width: 320px) { 
+@media screen and (max-width: 320px) {
     .btn-join {
         font-size: 15px !important;
     }
 
     .c-btn--join {
-        & svg {transform: scale(0.7) !important;}
+        & svg {
+            transform: scale(0.7) !important;
+        }
     }
 }

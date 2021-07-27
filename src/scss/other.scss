@@ -1,7 +1,6 @@
 @import "./containers.scss";
 @import "./variables.scss";
 
-
 #logo {
     transition: transform $default-transition-time ease;
     will-change: transform;
@@ -18,8 +17,23 @@
         }
 
         & div.logo img {
-            transform: scale(1.02);  
+            transform: scale(1.02);
         }
+    }
+}
+
+#UISLogo {
+    position: absolute;
+    bottom: 20px;
+    right: 25%;
+    width: 200px;
+    z-index: 500;
+
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
     }
 }
 
@@ -37,20 +51,17 @@
 #navbar {
     background-color: transparent;
     width: 100%;
-    min-height: $navbar--height;
-    height: 100%;
+    // min-height: $navbar--height;
+    // height: 100%;
 
     transition: all $default-transition-time ease;
-
 
     &-hamburger {
         outline: none;
         border: none;
-        & span {transform: scale(1.2);}
-    }
-
-    &-parent {
-        height: $navbar--height;
+        & span {
+            transform: scale(1.2);
+        }
     }
 
     &-parent.active {
@@ -70,7 +81,7 @@
     padding: 0 10vw;
 
     width: 100%;
-    height: 60vh;
+    height: 80%;
 }
 
 #footerLandPage {
@@ -96,14 +107,16 @@
     font-size: 25px;
     font-weight: 450;
 
-    height: 100%;   
+    height: 100%;
     width: 100%;
 
     min-width: 330px;
 
     border-bottom: solid 2px $color-bg--hover;
 
-    &:hover {background-color: $color-soft--hover;}
+    &:hover {
+        background-color: $color-soft--hover;
+    }
 
     &::before {
         content: "";
@@ -118,14 +131,14 @@
         font-size: 25px;
         width: 0;
         height: 0;
-        vertical-align: .255em;
+        vertical-align: 0.255em;
         content: "";
-        border-top: .3em solid;
-        border-right: .3em solid transparent;
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
         border-bottom: 0;
-        border-left: .3em solid transparent;
+        border-left: 0.3em solid transparent;
     }
-}   
+}
 
 .select {
     &-menu {
@@ -134,10 +147,9 @@
         width: 25vw;
         padding: 0;
         min-width: 330px;
-        transition: box-shadow 100ms cubic-bezier(0.4,0.0,0.2,1);
-        box-shadow: 0 24px 38px 3px rgba(75, 75, 75, 0.186), 
-                    0 9px 46px 8px rgba(58, 58, 58, 0.227), 
-                    0 11px 15px -7px rgba(19, 19, 19, 0.165);
+        transition: box-shadow 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 24px 38px 3px rgba(75, 75, 75, 0.186), 0 9px 46px 8px rgba(58, 58, 58, 0.227),
+            0 11px 15px -7px rgba(19, 19, 19, 0.165);
     }
     &-area {
         z-index: 10;
@@ -149,7 +161,7 @@
         justify-content: flex-start;
         align-items: center;
 
-        margin:0;
+        margin: 0;
         width: 100%;
         height: 8vh;
         padding: 1vh 20px;
@@ -159,7 +171,9 @@
 
         border-bottom: solid 1px rgb(216, 214, 214);
 
-        &:hover {background-color: $color-soft--hover;}
+        &:hover {
+            background-color: $color-soft--hover;
+        }
 
         &::before {
             content: "";
@@ -181,8 +195,6 @@
     margin: 0;
 }
 
-
-
 .link {
     &-icon {
         display: flex;
@@ -199,27 +211,36 @@
         margin-right: $margin--text_logo !important;
     }
 
-    & img {
+    & svg {
         width: 70px;
-        height: auto;
     }
 }
 
 .area-circle {
     &--green {
-        &::before {background-color: $color-mathematics--header !important;}
+        &::before {
+            background-color: $color-mathematics--header !important;
+        }
     }
     &--purple {
-        &::before {background-color: $color-physics--header !important;}
+        &::before {
+            background-color: $color-physics--header !important;
+        }
     }
     &--blue {
-        &::before {background-color: $color-chemestry--header !important;}
+        &::before {
+            background-color: $color-chemestry--header !important;
+        }
     }
     &--pink {
-        &::before {background-color: $color-languages--header !important;}
+        &::before {
+            background-color: $color-languages--header !important;
+        }
     }
     &--orange {
-        &::before {background-color: $color-geometry--header !important;}
+        &::before {
+            background-color: $color-geometry--header !important;
+        }
     }
 }
 
@@ -227,7 +248,7 @@
     &-link {
         &::after {
             display: block;
-            content: '';
+            content: "";
             border-bottom: solid 3px $color-hover-bar;
             transform: scaleX(0);
             transition: transform 0.3s ease-out;
@@ -251,7 +272,9 @@
             transition: transform $default-transition-time ease-out;
         }
     }
-    &-in {transition: all $default-transition-time ease-in;}
+    &-in {
+        transition: all $default-transition-time ease-in;
+    }
     &-in-out {
         transition: all $default-transition-time ease-in-out;
     }
@@ -267,94 +290,117 @@
 .c-theme_switcher.dark-mode {
     background-color: $color-theme_switcher--dark;
     box-shadow: 0 1px 2px 0 #575757, 0 2px 4px 0 #383838;
-    & svg {fill: $color-theme_switcher-icon--dark}
-    &:hover {
-        & svg {fill: $color-theme_switcher-icon-hover--dark}
+    & svg {
+        fill: $color-theme_switcher-icon--dark;
     }
-}
-
-.c-nav.dark-mode {
     &:hover {
-        background-color: $color-dark_theme-hover--navbar;
-    }
-    & #navbar {
-        & .typo-nav-link {
-            color: $color-dark_theme--navbar_items;
+        & svg {
+            fill: $color-theme_switcher-icon-hover--dark;
         }
     }
 }
 
 #horarioMatematicas {
     & div.c-schedule {
-        & div.row-header {background-color: $color-mathematics--header;}
+        & div.row-header {
+            background-color: $color-mathematics--header;
+        }
     }
 }
 
 #matematicas {
     background-color: $color-mathematics--bg;
-    div.c-area--header {background-color: $color-mathematics--header;}
+    div.c-area--header {
+        background-color: $color-mathematics--header;
+    }
     div.c-area--body {
         background-color: $color-mathematics--bg;
-        & div.c-subject {background-color: $color-mathematics--subject;}
+        & div.c-subject {
+            background-color: $color-mathematics--subject;
+        }
     }
 }
 
 #horarioFisica {
     & div.c-schedule {
-        & div.row-header {background-color: $color-physics--header;}
+        & div.row-header {
+            background-color: $color-physics--header;
+        }
     }
 }
 
 #fisica {
     background-color: $color-physics--bg;
-    div.c-area--header {background-color: $color-physics--header;}
+    div.c-area--header {
+        background-color: $color-physics--header;
+    }
     div.c-area--body {
         background-color: $color-physics--bg;
-        & div.c-subject {background-color: $color-physics--subject;}
+        & div.c-subject {
+            background-color: $color-physics--subject;
+        }
     }
 }
 
 #horarioQuimica {
     & div.c-schedule {
-        & div.row-header {background-color: $color-chemestry--header;}
+        & div.row-header {
+            background-color: $color-chemestry--header;
+        }
     }
 }
 
 #quimica {
     background-color: $color-chemestry--bg;
-    div.c-area--header {background-color: $color-chemestry--header;}
+    div.c-area--header {
+        background-color: $color-chemestry--header;
+    }
     div.c-area--body {
         background-color: $color-chemestry--bg;
-        & div.c-subject {background-color: $color-chemestry--subject;}
+        & div.c-subject {
+            background-color: $color-chemestry--subject;
+        }
     }
 }
 
 #horarioDescriptiva {
     & div.c-schedule {
-        & div.row-header {background-color: $color-geometry--header;}
+        & div.row-header {
+            background-color: $color-geometry--header;
+        }
     }
 }
 
 #descriptiva {
     background-color: $color-geometry--bg;
-    div.c-area--header {background-color: $color-geometry--header;}
+    div.c-area--header {
+        background-color: $color-geometry--header;
+    }
     div.c-area--body {
         background-color: $color-geometry--bg;
-        & div.c-subject {background-color: $color-geometry--subject;}
+        & div.c-subject {
+            background-color: $color-geometry--subject;
+        }
     }
 }
 
 #horarioIdiomas {
     & div.c-schedule {
-        & div.row-header {background-color: $color-languages--header;}
+        & div.row-header {
+            background-color: $color-languages--header;
+        }
     }
 }
 
 #idiomas {
     background-color: $color-languages--bg;
-    & div.c-area--header {background-color: $color-languages--header;}
+    & div.c-area--header {
+        background-color: $color-languages--header;
+    }
     & div.c-area--body {
         background-color: $color-languages--bg;
-        & div.c-subject {background-color: $color-languages--subject;}
+        & div.c-subject {
+            background-color: $color-languages--subject;
+        }
     }
 }
