@@ -1,8 +1,8 @@
-import mathSVG from "./images/math.svg";
-import physicsSVG from "./images/physics.svg";
-import chemestrySVG from "./images/chemestry.svg";
-import languageSVG from "./images/language.svg";
-import geometrySVG from "./images/geometry.svg";
+import {ReactComponent as MathIcon} from "./images/math.svg";
+import {ReactComponent as PhysicsIcon} from "./images/physics.svg";
+import {ReactComponent as ChemestryIcon} from "./images/chemestry.svg";
+import {ReactComponent as LanguageIcon} from "./images/language.svg";
+import {ReactComponent as GeometryIcon} from "./images/geometry.svg";
 
 const areas = [
     {
@@ -10,7 +10,7 @@ const areas = [
         headerColor: "#76e331",
         bgColor: "rgb(210, 246, 187, 0.5)",
         subjectColor: "#91e859",
-        icon: <img src={mathSVG} alt="Matemáticas" style={ {width: "32px", height: "auto"} }/>,
+        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -44,7 +44,7 @@ const areas = [
         headerColor: "#661fc7",
         bgColor: "rgb(218, 198, 246, 0.35)",
         subjectColor: "#894bdd",
-        icon: <img src={physicsSVG} alt="Física" style={ {width: "32px", height: "auto"} }/>,
+        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -66,7 +66,7 @@ const areas = [
         headerColor: "#26afdf", // blue
         bgColor: "rgb(193, 232, 245, 0.35)",
         subjectColor: "#64c6e8",
-        icon: <img src={chemestrySVG} alt="Química" style={ {width: "32px", height: "auto"} }/>,
+        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -92,7 +92,7 @@ const areas = [
         headerColor: "#e2226f", // pink
         bgColor: "rgb(246, 193, 214, 0.3)",
         subjectColor: "#e86499",
-        icon: <img src={languageSVG} alt="Idiomas" style={ {width: "32px", height: "auto"} }/>,
+        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -110,7 +110,7 @@ const areas = [
         headerColor: "#e97e1c", // orange
         bgColor: "rgb(245, 197, 153, 0.3)",
         subjectColor: "#e48b3a",
-        icon: <img src={geometrySVG} alt="Descriptiva" style={ {width: "32px", height: "auto"} }/>,
+        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
