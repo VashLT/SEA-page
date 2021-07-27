@@ -1,5 +1,5 @@
 // $theme-colors: (
-    
+
 // );
 
 @import "~bootstrap/scss/bootstrap";
@@ -9,8 +9,8 @@
 @import "./resize.scss";
 @import "./theme.scss";
 
-
-body, html {
+body,
+html {
     background-color: $color-bg;
     height: 100%;
     width: 100%;
@@ -38,11 +38,15 @@ body, html {
 }
 
 #app {
-    @extend .c;
+    margin: 0;
+    padding: 0;
 
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
+    min-width: 280px;
+    width: 100vw;
+    max-width: 2800px;
+    min-height: 620px;
+    height: 100vh;
+    max-height: 1200px;
 
     scroll-behavior: smooth;
     justify-content: flex-start;
@@ -56,6 +60,16 @@ body, html {
     justify-content: flex-start;
     font-family: $font-family;
 
+    min-height: inherit;
+    width: inherit;
+    min-width: 100vw;
+    max-width: inherit;
+
+    max-height: inherit;
+
+    margin-left: auto;
+    margin-right: auto;
+
     border-radius: 0;
 
     transition: background-color $time-dark_mode-transition;
@@ -64,21 +78,25 @@ body, html {
 #landPage {
     @extend #basePage;
 
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: $navbar--height + 2vh;
+    // padding-top: $navbar--height + 2vh;
 
     overflow-y: hidden;
 
     & main {
         @extend .c;
 
-        min-height: 87vh;
+        justify-content: flex-start;
+        height: 100%;
         width: 100%;
     }
 }
 
-#areasPage, #schedulePage, #faqsPage { 
-    @extend #basePage; 
+#areasPage,
+#schedulePage,
+#faqsPage {
+    @extend #basePage;
     padding: 0px;
 }
