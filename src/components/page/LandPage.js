@@ -13,8 +13,6 @@ export default function LandPage() {
     const { theme } = useContext(ThemeContext);
     useEffect(() => {
         if (window.innerWidth > 1200) document.body.style.overflowY = "hidden";
-        document.body.style.overflowX = "hidden";
-
     }, []);
 
     return (
@@ -40,8 +38,8 @@ export default function LandPage() {
                         />
                     </div>
                 </div>
+                <UISLogo id="UISLogo"/>
             </main>
-            <UISLogo id="UISLogo"/>
             <DiscordWidget />
         </div>
     );
