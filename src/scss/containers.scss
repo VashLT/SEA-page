@@ -18,7 +18,8 @@
         border-radius: $btn-radius;
 
         min-width: 300px;
-        width: 300px;
+        width: 15vw;
+        max-width: 400px;
         min-height: 75vh;
 
         margin-bottom: 30px;
@@ -28,7 +29,7 @@
 
         &:hover {
             transform: scale(1.005);
-            box-shadow: 0 2px 4px 0 $color-bg--hover, 0 6px 8px 0 $color-bg--hover;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
         }
 
         &--header {
@@ -74,6 +75,7 @@
         &--join {
             @extend .c-btn;
             min-width: 150px;
+            max-height: 120px;
 
             & svg {
                 transform: scale(1.2);
@@ -106,6 +108,7 @@
         &--main {
             & img {
                 min-width: 475px;
+                max-width: 1000px;
                 width: 35vw;
                 height: auto;
                 transition: transform 0.2s ease-in;
@@ -132,8 +135,8 @@
 
     &-subject {
         @extend .c;
-        min-width: 20%;
         margin-bottom: 20px;
+        width: 90%;
 
         padding: 10px 20px;
 

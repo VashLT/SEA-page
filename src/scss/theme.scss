@@ -55,7 +55,7 @@
             &-nav {
                 &-link {
                     &:hover {
-                        color: $color-dark_theme-hover--navbar_items;
+                        color: $color-dark_theme-hover--navbar_items !important;
                     }
                 }
                 &-title {
@@ -116,7 +116,8 @@
         & .c {
             &-area {
                 &:hover {
-                    box-shadow: 0 2px 4px 0 $color-dark_theme-hover--bg, 0 6px 8px 0 $color-dark_theme-hover--bg;
+                    box-shadow: rgba(17, 17, 26, 0.7) 0px 1px 0px, rgba(17, 17, 26, 0.7) 0px 8px 24px,
+                        rgba(17, 17, 26, 0.7) 0px 16px 48px;
                 }
             }
             &-svg_background--areas {
