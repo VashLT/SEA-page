@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 import {areas} from "../../data.js";
 import Area from "../element/Area";
 import BubbleLogo from "../element/BubbleLogo";
 
-export default function AreasPage(props) {
+export default memo( function AreasPage() {
     useEffect(() => {
         document.title = "SEA | Áreas"
     }, []);
@@ -19,4 +19,5 @@ export default function AreasPage(props) {
             </main>
         </div>
     )
-}
+});
+

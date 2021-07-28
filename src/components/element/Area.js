@@ -1,20 +1,21 @@
 import React from 'react';
 import Subject from './Subject';
 
-export default function Area(props) {
-    function mapSubject(subject) {
-        return <Subject link={subject.link} name={subject.name} color={props.subjectColor} />;
-    }
+function mapSubject(subject, color, index) {
+    return <Subject link={subject.link} name={subject.name} color={color} key={ `s${index}`}/>;
+}
+
+export default function Area({subjects, name, icon, link, subjectColor}) {
     return (
-        <div className="c-area animate-image" id={normalize_string(props.name)}>
-            <div id={ `header${props.name}` } className="c-area--header">
-                <a className="link-icon"href={props.link}>
-                    {props.icon}
-                    &nbsp; {props.name}
+        <div className="c-area animate-image" id={normalize_string(name)}>
+            <div id={ `header${name}` } className="c-area--header">
+                <a className="link-icon"href={link}>
+                    {icon}
+                    &nbsp; {name}
                 </a>
             </div>
             <div className="c-area--body">
-                {props.subjects.map((subject) => mapSubject(subject))}
+                {subjects.map((subject, index) => mapSubject(subject, subjectColor, index))}
             </div>
         </div>
     );
