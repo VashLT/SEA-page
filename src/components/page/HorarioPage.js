@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import {areasSchedule, areasMapIndex} from "../../data.js";
 import Schedule from "../element/Schedule";
 import BubbleLogo from "../element/BubbleLogo";
 import SelectArea from "../element/SelectArea";
+
+import { ReactComponent as UISLogo } from '../../images/logos/UIS.svg';
 
 export default function HorarioPage() {
     useEffect(() => {
@@ -10,12 +12,13 @@ export default function HorarioPage() {
     }, []);
     const [area, setArea] = useState(areasSchedule[0]);
     
-    function changeArea(event) {
+    const changeArea = useCallback((event) => {
         const targetAreaIndex = getSelection(event.target);
         console.log("change area to", areasSchedule[targetAreaIndex]);
 
         setArea(areasSchedule[targetAreaIndex]);
-    }
+    }, [setArea]);
+
     return (
         <div id="schedulePage">
             <header id="headerSchedulePage" className="animate-line">
@@ -23,7 +26,10 @@ export default function HorarioPage() {
                 <BubbleLogo tipPosition="left" responsive={true}/>
             </header>
             <main>
-                <SelectArea onClick={(e) => changeArea(e)}/>
+                <div className="wrapper-sub-header">
+                    <SelectArea onClick={changeArea} />
+                    <UISLogo id="UISLogo"/>
+                </div>
                 <div id="areasSchedule" className="animate-nav-item">
                     <Schedule id={area.id} stripes={area.stripes} color={area.color}/>
                 </div>

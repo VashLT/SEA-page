@@ -90,7 +90,7 @@
     }
 
     .horario,
-    .c-select--schedule,
+    .wrapper-sub-header,
     #headerSchedulePage {
         padding: 1vh 8vw !important;
     }
@@ -115,6 +115,15 @@
         min-width: 100vw;
         padding-left: 25px;
         transform: translateX(-25px);
+    }
+
+    #landPage main {
+        & #UISLogo {
+            top: 20px;
+            right: 50px;
+            bottom: auto;
+            width: 100px;
+        }
     }
 
     #headerSchedulePage,
@@ -151,13 +160,10 @@
         }
     }
     .horario,
-    .c-select--schedule {
+    .wrapper-sub-header {
         padding: 1vh 20px !important;
     }
     .c {
-        &-select--schedule {
-            padding: 2vh 20px;
-        }
         &-content--main {
             width: 80%;
         }
@@ -204,14 +210,6 @@
         }
         &-a {
             font-size: 1.4vw;
-        }
-    }
-    .btn {
-        &-join {
-            min-width: 250px;
-            width: 20vw;
-            height: 9.5vh;
-            font-size: 35px;
         }
     }
 }
@@ -376,7 +374,7 @@
         }
     }
     .horario,
-    .c-select--schedule {
+    .wrapper-sub-header {
         padding: 1vh 0px !important;
     }
     a.typo-p {
@@ -410,11 +408,6 @@
         }
     }
 
-    .btn-join {
-        min-width: 40vw;
-        max-width: 150px;
-        font-size: 4.2vw;
-    }
     .c {
         &-area {
             width: 220px;
@@ -460,6 +453,21 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    #landPage main #UISLogo {
+        right: 20px;
+        width: 80px;
+    }
+    #schedulePage main #UISLogo {
+        position: absolute;
+        bottom: 20px;
+        opacity: 0.5;
+        pointer-events: none;
+        right: 15px;
+        z-index: 10;
+    }
+}
+
 @media screen and (max-height: 840px) {
     #headerFAQPage {
         & h1 {
@@ -468,12 +476,6 @@
         &::after {
             transform: translateY(20px) !important;
         }
-    }
-}
-
-@media screen and (max-height: 700px) {
-    #navbar-parent {
-        min-height: 16vh;
     }
 }
 

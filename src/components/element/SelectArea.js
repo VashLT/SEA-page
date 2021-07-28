@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { areas, areasMapIndex } from '../../data.js';
 
+function mapSelect(area, updateState) {
+    return (
+        <button className={"dropdown-item select-area " + getCSSClass(area.name)} onClick={updateState}>{area.name}</button>
+    );
+    }
 
-export default function SelectArea(props) {
+export default function SelectArea({onClick}) {
     const [activeArea, setArea] = useState(areas[0])
-    if (!props.hasOwnProperty("onClick")) {
+    if (onClick === undefined) {
         throw "SelectArea component requires 'onClick' property";
     }
 
-    console.log(props, props.onChange)
-
-    function toggleArea(e) {
-        const selectedArea = e.target;
+    const toggleArea = useCallback((e) => {
+       const selectedArea = e.target;
         try {
             const newArea = areas[areasMapIndex.get(selectedArea.innerHTML)];
             console.log("new area", newArea);
@@ -19,22 +22,16 @@ export default function SelectArea(props) {
         } catch (e) {
             console.error(e);
             return;
-        }
+        } 
+    }, [setArea]);
 
-    }
-
-    function updateState(e) {
+    const updateState = useCallback((e) => {
         if (activeArea.name !== e.target.innerHTML) {
             toggleArea(e);
-            props.onClick(e);
+            onClick(e);
         }
-    }
+    }, [onClick, toggleArea, activeArea]);
 
-    function mapSelect(area) {
-        return (
-            <button className={"dropdown-item select-area " + getCSSClass(area.name)} onClick={ updateState }>{ area.name }</button>
-        )
-    }
     return (
         <div className="btn-group c-select--schedule">
             <button id="selectArea" className={"btn btn-xl " + getCSSClass(activeArea.name)} type="button"
@@ -42,7 +39,7 @@ export default function SelectArea(props) {
                 {activeArea.name}
             </button>
             <div class="dropdown-menu select-menu">
-                {areas.map((area) => mapSelect(area))}
+                {areas.map((area) => mapSelect(area, updateState))}
             </div>
         </div>
     )

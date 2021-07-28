@@ -12,7 +12,7 @@
     justify-content: flex-start !important;
 
     width: 100%;
-    height: auto;
+    height: 15%;
 
     h1 {
         font-size: 50px;
@@ -23,7 +23,7 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 25%;
+        bottom: 0;
         width: $title-overline-width;
         height: 4px;
         background-color: $color-header-hover-bar;
@@ -33,8 +33,8 @@
 #headerAreasPage {
     @extend .header-base;
     padding: 0px $page-margin !important;
-    min-height: 15vh;
-    max-height: 15vh;
+    // min-height: 15vh;
+    // max-height: 15vh;
 }
 
 #areas {
@@ -81,9 +81,8 @@
 
         background-color: $color-join-btn;
 
-        width: 25vw;
-        height: 10vh;
-        min-height: 60px;
+        width: 100%;
+        height: 100%;
 
         color: white !important;
         font-size: clamp(20px, 4vh, 40px);

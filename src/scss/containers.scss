@@ -29,7 +29,8 @@
 
         &:hover {
             transform: scale(1.005);
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+                rgba(17, 17, 26, 0.1) 0px 16px 48px;
         }
 
         &--header {
@@ -76,6 +77,10 @@
             @extend .c-btn;
             min-width: 150px;
             max-height: 120px;
+            min-height: 60px;
+            width: 90%;
+
+            height: 10vh;
 
             & svg {
                 transform: scale(1.2);
@@ -100,6 +105,10 @@
         &--main {
             @extend .c-content;
             width: 35vw;
+            & h1,
+            p {
+                width: 90%;
+            }
         }
     }
 
@@ -164,11 +173,11 @@
             margin-right: auto;
 
             width: 35vw;
-            min-width: 150px;
+            min-width: 180px;
+            max-width: 350px;
 
-            height: 10vh;
-            max-height: 10vh;
-            padding: 2vh $page-margin;
+            height: 100px;
+            padding: 2vh 0;
         }
     }
 
