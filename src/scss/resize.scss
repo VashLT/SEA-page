@@ -152,6 +152,14 @@
         align-items: flex-start;
     }
 
+    #faqsPage {
+        & main svg#UISLogo {
+            left: 8%;
+            width: 15vw;
+            min-width: 120px;
+        }
+    }
+
     .column {
         &-header,
         &--day,

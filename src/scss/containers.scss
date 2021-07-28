@@ -176,7 +176,9 @@
             min-width: 180px;
             max-width: 350px;
 
-            height: 100px;
+            min-height: 100px;
+            height: 10vh;
+            max-height: 150px;
             padding: 2vh 0;
         }
     }

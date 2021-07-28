@@ -25,8 +25,8 @@ html {
 
     min-width: 100%;
 
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;
+    max-height: 100%;
 }
 
 #root {
@@ -62,12 +62,8 @@ html {
     justify-content: flex-start;
     font-family: $font-family;
 
-    min-height: inherit;
     width: inherit;
     min-width: 100vw;
-    max-width: inherit;
-
-    max-height: inherit;
 
     margin-left: auto;
     margin-right: auto;
@@ -83,7 +79,6 @@ html {
     height: 100%;
     display: flex;
     flex-direction: column;
-    // padding-top: $navbar--height + 2vh;
 
     overflow-y: hidden;
 
@@ -126,6 +121,27 @@ html {
         padding: 20px $page-margin;
         & #UISLogo {
             width: 120px;
+        }
+    }
+}
+
+#areasPage {
+    #UISLogo {
+        position: absolute;
+        bottom: 10px;
+        right: 10%;
+        width: 150px;
+    }
+}
+
+#faqsPage {
+    & main {
+        position: relative;
+        #UISLogo {
+            position: absolute;
+            bottom: 10px;
+            right: 150px;
+            width: 12em;
         }
     }
 }

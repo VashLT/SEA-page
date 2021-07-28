@@ -23,7 +23,7 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: 10%;
         width: $title-overline-width;
         height: 4px;
         background-color: $color-header-hover-bar;
