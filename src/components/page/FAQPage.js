@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import BubbleLogo from "../element/BubbleLogo";
 import Question from "../element/Question";
+import { ReactComponent as UISLogo } from '../../images/logos/UIS.svg';
 import { faqs } from "../../data.js";
 
 export default function FAQPage() {
@@ -15,7 +16,8 @@ export default function FAQPage() {
                 <BubbleLogo tipPosition="left" responsive={true}/>
             </header>
             <main id="faqs">
-                {faqs.map((faq) => <Question {...faq}/>)}
+                {faqs.map((faq) => <Question {...faq} />)}
+                <UISLogo id="UISLogo" />
             </main>
         </div>
     )

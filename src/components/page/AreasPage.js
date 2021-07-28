@@ -2,6 +2,7 @@ import React, { useEffect, memo } from 'react';
 import {areas} from "../../data.js";
 import Area from "../element/Area";
 import BubbleLogo from "../element/BubbleLogo";
+import { ReactComponent as UISLogo } from '../../images/logos/UIS.svg';
 
 export default memo( function AreasPage() {
     useEffect(() => {
@@ -17,6 +18,7 @@ export default memo( function AreasPage() {
             <main id="areas" className="c-svg_background--areas smooth">
                 {areas.map((area) => <Area {...area}/>)}
             </main>
+            <UISLogo id="UISLogo" />
         </div>
     )
 });
