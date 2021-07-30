@@ -44,7 +44,7 @@ const areas = [
         headerColor: "#661fc7",
         bgColor: "rgb(218, 198, 246, 0.35)",
         subjectColor: "#894bdd",
-        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
+        icon: <PhysicsIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -66,7 +66,7 @@ const areas = [
         headerColor: "#26afdf", // blue
         bgColor: "rgb(193, 232, 245, 0.35)",
         subjectColor: "#64c6e8",
-        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
+        icon: <ChemestryIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -92,7 +92,7 @@ const areas = [
         headerColor: "#e2226f", // pink
         bgColor: "rgb(246, 193, 214, 0.3)",
         subjectColor: "#e86499",
-        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
+        icon: <LanguageIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {
@@ -110,7 +110,7 @@ const areas = [
         headerColor: "#e97e1c", // orange
         bgColor: "rgb(245, 197, 153, 0.3)",
         subjectColor: "#e48b3a",
-        icon: <MathIcon style={{width: "32px", height: "auto"}}/>,
+        icon: <GeometryIcon style={{width: "32px", height: "auto"}}/>,
         link: "#",
         subjects: [
             {

@@ -20,7 +20,9 @@
         min-width: 300px;
         width: 15vw;
         max-width: 400px;
-        min-height: 75vh;
+        min-height: $areas-min-height;
+        max-height: $areas-max-height;
+        height: $areas-height;
 
         margin-bottom: 30px;
         margin-right: 2%;
@@ -38,7 +40,9 @@
 
             border-radius: 10px;
 
-            min-height: 15vh;
+            max-height: $areas-max-height * 0.2;
+            height: $areas-height * 0.2;
+            min-height: $areas-min-height * 0.2;
             width: 100%;
 
             transition: transform 0.2s ease-in-out;
@@ -61,7 +65,9 @@
 
             flex-direction: row;
 
-            min-height: 60vh;
+            min-height: $areas-min-height * 0.8;
+            height: $areas-height * 0.8;
+            max-height: $areas-max-height * 0.8;
 
             flex-wrap: wrap;
             padding: 50px 10px;

@@ -33,8 +33,8 @@
 #headerAreasPage {
     @extend .header-base;
     padding: 0px $page-margin !important;
-    // min-height: 15vh;
-    // max-height: 15vh;
+    height: 15vh;
+    min-height: 15%;
 }
 
 #areas {
@@ -47,8 +47,6 @@
     transition: all 0.2s ease;
 
     width: 100%;
-    min-height: 85vh;
-    height: auto;
 
     justify-content: space-evenly !important;
 }
