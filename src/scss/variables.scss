@@ -11,7 +11,7 @@ $height-hover--theme_switcher: 95px;
 
 $navbar--height: 11vh;
 
-$navbar--load-time: 1s;
+$navbar--load-time: 0.2s;
 $navbar-items--load-time: 1s;
 
 $time-delay--widget: $navbar--load-time + $navbar-items--load-time - 0.5s;

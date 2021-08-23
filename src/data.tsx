@@ -1,5 +1,13 @@
 import React from 'react';
 
+import {
+    MATHEMATICS_INVITE_LINKS,
+    PHYSICS_INVITE_LINKS,
+    CHEMESTRY_INVITE_LINKS,
+    LANGUAGES_INVITE_LINKS,
+    GDESCRIPTIVE_INVITE_LINKS
+} from "./utils/constants";
+
 import { ReactComponent as MathIcon } from "./images/math.svg";
 import { ReactComponent as PhysicsIcon } from "./images/physics.svg";
 import { ReactComponent as ChemestryIcon } from "./images/chemestry.svg";
@@ -17,27 +25,27 @@ const areas = [
         subjects: [
             {
                 name: "Cálculo I",
-                link: "https://discord.gg/xVWbmSCsXM"
+                link: MATHEMATICS_INVITE_LINKS['calculo-i']
             },
             {
                 name: "Cálculo II",
-                link: "https://discord.gg/dU73M9SJvf"
+                link: MATHEMATICS_INVITE_LINKS['calculo-ii']
             },
             {
                 name: "Cálculo III",
-                link: "https://discord.gg/YQgvrr7vsH"
+                link: MATHEMATICS_INVITE_LINKS['calculo-iii']
             },
             {
                 name: "Ec. Diferenciales",
-                link: "https://discord.gg/CaAatuextk"
+                link: MATHEMATICS_INVITE_LINKS['ecuaciones-diferenciales']
             },
             {
                 name: "Algebra Lineal I",
-                link: "https://discord.gg/9XJbBAKJMm"
+                link: MATHEMATICS_INVITE_LINKS['algebra-lineal']
             },
             {
                 name: "Algebra Lineal II",
-                link: "https://discord.gg/MGWJsZxBVE"
+                link: MATHEMATICS_INVITE_LINKS['algebra-lineal-ii']
             },
         ]
     },
@@ -51,15 +59,15 @@ const areas = [
         subjects: [
             {
                 name: "Física I",
-                link: "https://discord.gg/ddfzTzt4Xe"
+                link: PHYSICS_INVITE_LINKS['fisica-i']
             },
             {
                 name: "Física II",
-                link: "https://discord.gg/S67YFZkPvh"
+                link: PHYSICS_INVITE_LINKS['fisica-ii']
             },
             {
                 name: "Física III",
-                link: "https://discord.gg/N8VHrm9CKf"
+                link: PHYSICS_INVITE_LINKS['fisica-iii']
             }
         ]
     },
@@ -73,20 +81,24 @@ const areas = [
         subjects: [
             {
                 name: "Química I",
-                link: "https://discord.gg/VH6XTfsFwB"
+                link: CHEMESTRY_INVITE_LINKS['quimica-i']
             },
             {
-                name: "Química II",
-                link: "https://discord.gg/BygK8Vb3uJ"
+                name: "Química Inorgánica",
+                link: CHEMESTRY_INVITE_LINKS['quimica-inorganica']
             },
             {
-                name: "Química III",
-                link: "https://discord.gg/wYXffGfRKk"
+                name: "Química Orgánica",
+                link: CHEMESTRY_INVITE_LINKS['quimica-organica']
             },
             {
-                name: "Química varios",
-                link: "https://discord.gg/BD498FvX84"
+                name: "Química Varios",
+                link: CHEMESTRY_INVITE_LINKS['quimica-varios']
             },
+            {
+                name: "Química General",
+                link: CHEMESTRY_INVITE_LINKS['quimica-general']
+            }
         ]
     },
     {
@@ -99,11 +111,11 @@ const areas = [
         subjects: [
             {
                 name: "Inglés",
-                link: "https://discord.gg/CkY7bs2YpW"
+                link: LANGUAGES_INVITE_LINKS.ingles
             },
             {
                 name: "Frances",
-                link: "https://discord.gg/MGuKFcBhcA"
+                link: LANGUAGES_INVITE_LINKS.frances
             },
         ]
     },
@@ -117,7 +129,7 @@ const areas = [
         subjects: [
             {
                 name: "Geometría Descriptiva",
-                link: "https://discord.gg/snWrnP5tuS"
+                link: GDESCRIPTIVE_INVITE_LINKS['geometria-descriptiva']
             },
         ]
     },
@@ -126,6 +138,8 @@ const areas = [
 const areasSchedule = [
     {
         id: "horarioMatematicas",
+        // sheetId: "1WhCrQE8VLpc9UKh9NkdIOnRG7Umf_0pD",
+        sheetId: "1AFb4McZ-NngKiD5WFk_K9hIMfreEjLN40z5sJ_PwFKI",
         name: "Matématicas",
         color: "#76e331",
         stripes: [
@@ -227,6 +241,7 @@ const areasSchedule = [
     },
     {
         id: "horarioFisica",
+        sheetId: "1IWs0v9QO070YC_xoO4n_rGAyUQcVpJL1",
         name: "Física",
         color: "#661fc7",
         stripes: [
@@ -324,6 +339,7 @@ const areasSchedule = [
     },
     {
         id: "horarioQuimica",
+        sheetId: "1v-Bm2kHaMOKAycdrAVj7uHTAK0rMQqSw",
         name: "Química",
         color: "#26afdf",
         stripes: [
@@ -405,6 +421,7 @@ const areasSchedule = [
     },
     {
         id: "horarioIdiomas",
+        sheetId: "1eZubHqpl4R2D0qpP_hDbLTph15KrZiv5K7IwwLbhap8",
         name: "Idiomas",
         color: "#e2226f",
         stripes: []
@@ -412,6 +429,7 @@ const areasSchedule = [
     },
     {
         id: "horarioDescriptiva",
+        sheetId: "1WhCrQE8VLpc9UKh9NkdIOnRG7Umf_0pD",
         name: "Geometría Descriptiva",
         color: "#e97e1c",
         stripes: [

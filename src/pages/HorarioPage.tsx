@@ -4,7 +4,13 @@ import Schedule from "../components/Schedule";
 import BubbleLogo from "../components/BubbleLogo";
 import SelectArea from "../components/SelectArea";
 
+import useGoogleSheets from 'use-google-sheets';
+
 import { ReactComponent as UISLogo } from '../images/logos/UIS.svg';
+
+import LoadSpinner from '../components/LoadSpinner';
+
+const { REACT_APP_GOOGLE_API_KEY } = process.env;
 
 export const HorarioPage: React.FC = () => {
     useEffect(() => {
@@ -12,11 +18,21 @@ export const HorarioPage: React.FC = () => {
     }, []);
     const [area, setArea] = useState(areasSchedule[0]);
 
+    console.log({ REACT_APP_GOOGLE_API_KEY })
+
+    const { data, loading, error } = useGoogleSheets({
+        apiKey: REACT_APP_GOOGLE_API_KEY!,
+        sheetId: area.sheetId
+    })
+
+
     const changeArea = useCallback((event) => {
         const targetAreaIndex = getSelection(event.target);
 
         setArea(areasSchedule[targetAreaIndex]);
     }, [setArea]);
+
+    console.log(data);
 
     return (
         <div id="schedulePage">
@@ -30,7 +46,10 @@ export const HorarioPage: React.FC = () => {
                     <UISLogo id="UISLogo" />
                 </div>
                 <div id="areasSchedule" className="animate-nav-item">
-                    <Schedule {...area} />
+                    {loading ?
+                        <LoadSpinner />
+                        : <Schedule {...area} />
+                    }
                 </div>
             </main>
         </div>
