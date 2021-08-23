@@ -1,20 +1,19 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import {areasSchedule, areasMapIndex} from "../../data.js";
-import Schedule from "../element/Schedule";
-import BubbleLogo from "../element/BubbleLogo";
-import SelectArea from "../element/SelectArea";
+import { areasSchedule, areasMapIndex } from "../data";
+import Schedule from "../components/Schedule";
+import BubbleLogo from "../components/BubbleLogo";
+import SelectArea from "../components/SelectArea";
 
-import { ReactComponent as UISLogo } from '../../images/logos/UIS.svg';
+import { ReactComponent as UISLogo } from '../images/logos/UIS.svg';
 
-export default function HorarioPage() {
+export const HorarioPage: React.FC = () => {
     useEffect(() => {
         document.title = "SEA | Horarios"
     }, []);
     const [area, setArea] = useState(areasSchedule[0]);
-    
+
     const changeArea = useCallback((event) => {
         const targetAreaIndex = getSelection(event.target);
-        console.log("change area to", areasSchedule[targetAreaIndex]);
 
         setArea(areasSchedule[targetAreaIndex]);
     }, [setArea]);
@@ -23,22 +22,22 @@ export default function HorarioPage() {
         <div id="schedulePage">
             <header id="headerSchedulePage" className="animate-line">
                 <h1>Franjas de atención</h1>
-                <BubbleLogo tipPosition="left" responsive={true}/>
+                <BubbleLogo tipPosition="left" responsive={true} />
             </header>
             <main>
                 <div className="wrapper-sub-header">
                     <SelectArea onClick={changeArea} />
-                    <UISLogo id="UISLogo"/>
+                    <UISLogo id="UISLogo" />
                 </div>
                 <div id="areasSchedule" className="animate-nav-item">
-                    <Schedule id={area.id} stripes={area.stripes} color={area.color}/>
+                    <Schedule {...area} />
                 </div>
             </main>
         </div>
     );
 }
 
-function getSelection(selectElement) {
+const getSelection = (selectElement: HTMLElement) => {
     try {
         console.log("getSelection", selectElement.innerHTML);
         return areasMapIndex.get(selectElement.innerHTML);
@@ -46,3 +45,5 @@ function getSelection(selectElement) {
         console.error(e);
     }
 }
+
+export default HorarioPage;

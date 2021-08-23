@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from 'react';
-import { ReactComponent as SunIcon } from '../../../images/icon/sun.svg';
-import { ReactComponent as MoonIcon } from '../../../images/icon/moon.svg'
+import { ReactComponent as SunIcon } from '../../images/icon/sun.svg';
+import { ReactComponent as MoonIcon } from '../../images/icon/moon.svg'
 import ThemeContext from './ThemeContext';
 
 export default function ThemeSwitcher() {

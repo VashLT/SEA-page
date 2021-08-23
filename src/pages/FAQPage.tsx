@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import BubbleLogo from "../element/BubbleLogo";
-import Question from "../element/Question";
-import { ReactComponent as UISLogo } from '../../images/logos/UIS.svg';
-import { faqs } from "../../data.js";
+import BubbleLogo from "../components/BubbleLogo";
+import Question from "../components/Question";
+import { ReactComponent as UISLogo } from '../images/logos/UIS.svg';
+import { faqs } from "../data";
 
-export default function FAQPage() {
+export const FAQPage = () => {
     useEffect(() => {
         document.title = "SEA | Preguntas frecuentes"
     }, []);
@@ -13,7 +13,7 @@ export default function FAQPage() {
         <div id="faqsPage">
             <header id="headerFAQPage" className="animate-line">
                 <h1>Preguntas frecuentes (FAQ)</h1>
-                <BubbleLogo tipPosition="left" responsive={true}/>
+                <BubbleLogo tipPosition="left" responsive={true} />
             </header>
             <main id="faqs">
                 {faqs.map((faq) => <Question {...faq} />)}
@@ -22,3 +22,5 @@ export default function FAQPage() {
         </div>
     )
 }
+
+export default FAQPage;
