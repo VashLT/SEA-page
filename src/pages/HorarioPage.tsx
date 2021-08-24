@@ -4,26 +4,26 @@ import Schedule from "../components/Schedule";
 import BubbleLogo from "../components/BubbleLogo";
 import SelectArea from "../components/SelectArea";
 
-import useGoogleSheets from 'use-google-sheets';
-
 import { ReactComponent as UISLogo } from '../images/logos/UIS.svg';
 
-import LoadSpinner from '../components/LoadSpinner';
+// import LoadSpinner from '../components/LoadSpinner';
 
-const { REACT_APP_GOOGLE_API_KEY } = process.env;
+// import { handleClientLoad } from '../hooks/useGoogleSheets';
+
+// const { REACT_APP_GOOGLE_API_KEY } = process.env;
+
+// const loadSchedules = async () => {
+//     handleClientLoad();
+// }
 
 export const HorarioPage: React.FC = () => {
-    useEffect(() => {
-        document.title = "SEA | Horarios"
-    }, []);
     const [area, setArea] = useState(areasSchedule[0]);
 
-    console.log({ REACT_APP_GOOGLE_API_KEY })
-
-    const { data, loading, error } = useGoogleSheets({
-        apiKey: REACT_APP_GOOGLE_API_KEY!,
-        sheetId: area.sheetId
-    })
+    // const { data, loading, error } = useGoogleSheets({
+    //     apiKey: REACT_APP_GOOGLE_API_KEY!,
+    //     sheetId: area.sheetId,
+    //     sheetsNames: ['1']
+    // })
 
 
     const changeArea = useCallback((event) => {
@@ -32,7 +32,13 @@ export const HorarioPage: React.FC = () => {
         setArea(areasSchedule[targetAreaIndex]);
     }, [setArea]);
 
-    console.log(data);
+    useEffect(() => {
+        document.title = "SEA | Horarios"
+    }, []);
+
+    // useEffect(() => {
+    //     loadSchedules();
+    // }, []);
 
     return (
         <div id="schedulePage">
@@ -46,10 +52,11 @@ export const HorarioPage: React.FC = () => {
                     <UISLogo id="UISLogo" />
                 </div>
                 <div id="areasSchedule" className="animate-nav-item">
-                    {loading ?
+                    <Schedule {...area} />
+                    {/* {loading ?
                         <LoadSpinner />
                         : <Schedule {...area} />
-                    }
+                    } */}
                 </div>
             </main>
         </div>

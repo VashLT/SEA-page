@@ -1,7 +1,17 @@
 import React from 'react';
 
 const parseAnswer = (ans: string) => {
-    return <p className="typo-p-answer">{ans}</p>;
+    const linkRegex = /\(([a-zA-Z0-9:/?&"'.]+)\)\[([a-zA-Z0-9 ]+)\]/g;
+    var processedAnswer = ans;
+    // ans contains a link
+    if (ans.match(linkRegex)) {
+        console.log("regex matched!");
+        processedAnswer = processedAnswer.replaceAll(
+            linkRegex,
+            `<a class="typo-a" data-toggle="tooltip" data-placement="top" data-original-title="Ir a Discord" href="$1">$2</a>`
+        );
+    }
+    return <p className="typo-p-answer" dangerouslySetInnerHTML={{ __html: processedAnswer }}></p>;
 }
 
 export const Question: React.FC<QuestionProps> = ({ answer, id, question }) => {

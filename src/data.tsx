@@ -139,7 +139,7 @@ const areasSchedule = [
     {
         id: "horarioMatematicas",
         // sheetId: "1WhCrQE8VLpc9UKh9NkdIOnRG7Umf_0pD",
-        sheetId: "1AFb4McZ-NngKiD5WFk_K9hIMfreEjLN40z5sJ_PwFKI",
+        sheetId: "19SzXwXiQVGKCy0g80fFDBcDj9qteoRATehrIhlNGoq0",
         name: "Matématicas",
         color: "#76e331",
         stripes: [
@@ -152,10 +152,10 @@ const areasSchedule = [
                     {},
                     {},
                     {
-                        names: ["José Silva", "Elian"]
+                        names: ["Carlos Q.", "Geyson"]
                     },
                     {
-                        names: ["Geyson", "Elian"]
+                        names: ["Juan Pablo"]
                     }
                 ]
             },
@@ -163,25 +163,25 @@ const areasSchedule = [
                 time: "16:00-18:00",
                 tutors: [
                     {
-                        names: ["Sebastían", "Juan Pablo"],
+                        names: ["Carlos Q.", "Juan Pablo"],
                     },
                     {
-                        names: ["José Silva", "Sebastián"],
+                        names: ["Simón Calderón", "Carlos Q."],
                     },
                     {
-                        names: ["Luis Carlos", "Sebastían"],
+                        names: ["Luis Carlos", "Carlos Q."],
                     },
                     {
-                        names: ["Dana Gómez", "Sebastián"],
+                        names: ["Dana Gómez", "Carlos Q."],
                     },
                     {
                         names: ["Simón Calderón", "Luis Carlos"],
                     },
                     {
-                        names: ["Diego", "Luis Carlos"],
+                        names: ["Luis Carlos", "Geyson"],
                     },
                     {
-                        names: ["Diego", "Martin N."],
+                        names: ["Carlos Q.", "Geyson"],
                     }
                 ]
             },
@@ -189,25 +189,25 @@ const areasSchedule = [
                 time: "18:00-20:00",
                 tutors: [
                     {
-                        names: ["Sebastían", "Juan Pablo"],
+                        names: ["Geyson", "Juan Pablo"],
                     },
                     {
-                        names: ["José Silva", "Sebastián"],
+                        names: ["Luis Carlos", "Carlos Q."],
                     },
                     {
-                        names: ["Luis Carlos", "Sebastían"],
+                        names: ["Luis Carlos", "Carlos Q."],
                     },
                     {
-                        names: ["Dana Gómez", "Sebastián"],
+                        names: ["Dana Gómez", "Carlos Q."],
                     },
                     {
                         names: ["Simón Calderón", "Luis Carlos"],
                     },
                     {
-                        names: ["Diego", "Luis Carlos"],
+                        names: ["Luis Carlos", "Geyson"],
                     },
                     {
-                        names: ["Diego", "Martin N."],
+                        names: ["Carlos Q.", "Geyson"],
                     }
                 ]
             },
@@ -215,33 +215,29 @@ const areasSchedule = [
                 time: "20:00-22:00",
                 tutors: [
                     {
-                        names: ["Sebastían", "Juan Pablo"],
+                        names: ["Geyson", "Carlos Q."],
                     },
                     {
-                        names: ["José Silva", "Sebastián"],
+                        names: ["Geyson", "María José"],
                     },
                     {
-                        names: ["Luis Carlos", "Sebastían"],
+                        names: ["Geyson", "Juan Pablo"],
                     },
                     {
-                        names: ["Dana Gómez", "Sebastián"],
+                        names: ["Simón Calderón", "Geyson"],
                     },
                     {
-                        names: ["Simón Calderón", "Luis Carlos"],
+                        names: ["Dana Gómez", "Carlos Q."],
                     },
-                    {
-                        names: ["Diego", "Luis Carlos"],
-                    },
-                    {
-                        names: ["Diego", "Martin N."],
-                    }
+                    {},
+                    {}
                 ]
             },
         ]
     },
     {
         id: "horarioFisica",
-        sheetId: "1IWs0v9QO070YC_xoO4n_rGAyUQcVpJL1",
+        sheetId: "1gC69SQjM9WksXmBEtVFZnhu7OiCrX-rlfVlLcZbGYJo",
         name: "Física",
         color: "#661fc7",
         stripes: [
@@ -344,19 +340,35 @@ const areasSchedule = [
         color: "#26afdf",
         stripes: [
             {
+                time: "14:00-16:00",
+                tutors: [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        names: ["Angélica Niño"]
+                    },
+                    {
+                        names: ["Nathalia Guerrero"]
+                    }
+                ]
+            },
+            {
                 time: "16:00-18:00",
                 tutors: [
                     {
                         names: ["Lesly S."],
                     },
                     {
-                        names: ["Juan Suarez"],
+                        names: ["Jose Serna"],
                     },
                     {
                         names: ["Lesly S."],
                     },
                     {
-                        names: ["Juan Suarez"],
+                        names: ["Sebastian"],
                     },
                     {
                         names: ["Lesly S."],
@@ -373,7 +385,7 @@ const areasSchedule = [
                 time: "18:00-20:00",
                 tutors: [
                     {
-                        names: ["Elda Juliana"],
+                        names: ["Nathalia Guerrero"],
                     },
                     {
                         names: ["Jose Serna"],
@@ -405,10 +417,10 @@ const areasSchedule = [
                         names: ["Sebastian"],
                     },
                     {
-                        names: ["Elda Juliana"],
+                        names: ["Lesly S."],
                     },
                     {
-                        names: ["Elda Juliana"],
+                        names: ["Angélica Niño"],
                     },
                     {
                         names: ["Nathalia Guerrero"],
@@ -424,7 +436,98 @@ const areasSchedule = [
         sheetId: "1eZubHqpl4R2D0qpP_hDbLTph15KrZiv5K7IwwLbhap8",
         name: "Idiomas",
         color: "#e2226f",
-        stripes: []
+        stripes: [
+            {
+                time: "14:00-16:00",
+                tutors: [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        names: ["Camilo"]
+                    },
+                    {
+                        names: ["Carlos"]
+                    }
+                ]
+            },
+            {
+                time: "16:00-18:00",
+                tutors: [
+                    {
+                        names: ["Juliana"]
+                    },
+                    {
+                        names: ["Juliana"]
+                    },
+                    {
+                        names: ["Juliana"]
+                    },
+                    {
+                        names: ["Laura"]
+                    },
+                    {
+                        names: ["Laura"]
+                    },
+                    {
+                        names: ["Iver"]
+                    },
+                    {
+                        names: ["Camilo"]
+                    }
+                ]
+            },
+            {
+                time: "18:00-20:00",
+                tutors: [
+                    {
+                        names: ["Iver"]
+                    },
+                    {
+                        names: ["Carlos"]
+                    },
+                    {
+                        names: ["Paula"]
+                    },
+                    {
+                        names: ["Carlos"]
+                    },
+                    {
+                        names: ["Paula"]
+                    },
+                    {
+                        names: ["Camilo"]
+                    },
+                    {
+                        names: ["Iver"]
+                    }
+                ]
+            },
+            {
+                time: "20:00-22:00",
+                tutors: [
+                    {
+                        names: ["Camila"]
+                    },
+                    {
+                        names: ["Laura"]
+                    },
+                    {
+                        names: ["Camila"]
+                    },
+                    {
+                        names: ["Paula"]
+                    },
+                    {
+                        names: ["Camila"]
+                    },
+                    {},
+                    {}
+                ]
+            },
+        ]
 
     },
     {
@@ -433,6 +536,22 @@ const areasSchedule = [
         name: "Geometría Descriptiva",
         color: "#e97e1c",
         stripes: [
+            {
+                time: "14:00-16:00",
+                tutors: [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        names: ["Juan Diego"]
+                    },
+                    {
+                        names: ["Juan Diego"]
+                    },
+                ]
+            },
             {
                 time: "16:00-18:00",
                 tutors: [
@@ -463,13 +582,13 @@ const areasSchedule = [
                 time: "18:00-20:00",
                 tutors: [
                     {
-                        names: ["Victor De Moya"],
+                        names: ["Víctor De Moya"],
                     },
                     {
                         names: ["Sebastian Fragozo"],
                     },
                     {
-                        names: ["Victor De Moya"],
+                        names: ["Víctor De Moya"],
                     },
                     {
                         names: ["Sebastian Fragozo"],
@@ -492,13 +611,13 @@ const areasSchedule = [
                         names: ["Sebastian Fragozo"],
                     },
                     {
-                        names: ["Victor De Moya"],
+                        names: ["Víctor De Moya"],
                     },
                     {
                         names: ["Karen Triana"],
                     },
                     {
-                        names: ["Victor De Moya"],
+                        names: ["Víctor De Moya"],
                     },
                     {
                         names: ["Diego Buitrago"],
@@ -514,12 +633,12 @@ const areasSchedule = [
 const faqs = [
     {
         question: "¿Tengo que rellenar un formulario de inscripción para acceder al programa?",
-        answer: `No, ahora el SEA cambió su método de inscripción para que sea más asequible y rápido para los estudiantes, te inscribes al seguir los pasos que están nuestro ("https://discord.gg/FbVrHS79")[servidor de Discord].`,
+        answer: `No, ahora el SEA cambió su método de inscripción para que sea más asequible y rápido para los estudiantes, te inscribes al seguir los pasos que están nuestro (https://discord.gg/FbVrHS79)[servidor de Discord].`,
         id: 0
     },
     {
         question: "¿Cuáles son las franjas de atención del programa?",
-        answer: `Puedes consultar los horarios de atención ("/horarios")[Aqui]`,
+        answer: `Puedes consultar los horarios de atención (/horarios)[Aqui]`,
         id: 1
     },
     {

@@ -4,7 +4,7 @@ export const PHYSICS_SHEET = "https://docs.google.com/spreadsheets/d/1IWs0v9QO07
 
 export const CHEMESTRY_SHEET = "https://docs.google.com/spreadsheets/d/1v-Bm2kHaMOKAycdrAVj7uHTAK0rMQqSw/edit#gid=2122943822";
 export const LANGUAGES_SHEET = "https://docs.google.com/spreadsheets/d/1eZubHqpl4R2D0qpP_hDbLTph15KrZiv5K7IwwLbhap8/edit#gid=0";
-export const GDESCRIPTIVE_SHEET = "https://docs.google.com/spreadsheets/d/1WhCrQE8VLpc9UKh9NkdIOnRG7Umf_0pD/edit#gid=1797930318";
+export const GDESCRIPTIVE_SHEET = "https://docs.google.com/spreadsheets/d/1LukCeGZ_2PeEtG51b1dzOugFcEK3Yv2w/edit#gid=2058393558";
 
 
 export const MATHEMATICS_INVITE_LINKS = {
