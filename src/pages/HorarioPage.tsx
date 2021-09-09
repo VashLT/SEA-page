@@ -16,7 +16,7 @@ import { ReactComponent as UISLogo } from '../images/logos/UIS.svg';
 //     handleClientLoad();
 // }
 
-export const HorarioPage: React.FC = () => {
+export const HorarioPage: React.FC<HorarioPageProps> = ({ disabled }) => {
     const [area, setArea] = useState(areasSchedule[0]);
 
     // const { data, loading, error } = useGoogleSheets({
@@ -52,7 +52,9 @@ export const HorarioPage: React.FC = () => {
                     <UISLogo id="UISLogo" />
                 </div>
                 <div id="areasSchedule" className="animate-nav-item">
-                    <Schedule {...area} />
+                    {disabled ? <Schedule {...area} disabled />
+                        : <Schedule {...area} />
+                    }
                     {/* {loading ?
                         <LoadSpinner />
                         : <Schedule {...area} />

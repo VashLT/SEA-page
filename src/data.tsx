@@ -114,7 +114,7 @@ const areas = [
                 link: LANGUAGES_INVITE_LINKS.ingles
             },
             {
-                name: "Frances",
+                name: "Francés",
                 link: LANGUAGES_INVITE_LINKS.frances
             },
         ]
@@ -144,19 +144,29 @@ const areasSchedule = [
         color: "#76e331",
         stripes: [
             {
-                time: "14:00-16:00",
+                time: "10:00-12:00",
                 tutors: [
                     {},
                     {},
                     {},
                     {},
                     {},
+                    { names: ["Geyson"] },
+                    { names: ["Juan Pablo"] }
+                ]
+            },
+            {
+                time: "14:00-16:00",
+                tutors: [
+                    { names: ["Simón Calderon"] },
+                    { names: ["Geyson"] },
+                    { names: ["Geyson"] },
+                    { names: ["Simón Calderon"] },
+                    { names: ["Carlos Q."] },
                     {
-                        names: ["Carlos Q.", "Geyson"]
+                        names: ["Carlos Q.", "Juan Pablo"]
                     },
-                    {
-                        names: ["Juan Pablo"]
-                    }
+                    { names: ["Juan Pablo", "Carlos Q."] }
                 ]
             },
             {
@@ -178,10 +188,10 @@ const areasSchedule = [
                         names: ["Simón Calderón", "Luis Carlos"],
                     },
                     {
-                        names: ["Luis Carlos", "Geyson"],
+                        names: ["Luis Carlos", "Juan Pablo"],
                     },
                     {
-                        names: ["Carlos Q.", "Geyson"],
+                        names: ["Luis Carlos", "Geyson"],
                     }
                 ]
             },
@@ -195,20 +205,16 @@ const areasSchedule = [
                         names: ["Luis Carlos", "Carlos Q."],
                     },
                     {
-                        names: ["Luis Carlos", "Carlos Q."],
+                        names: ["Geyson", "Carlos Q."],
                     },
                     {
-                        names: ["Dana Gómez", "Carlos Q."],
+                        names: ["Geyson", "Carlos Q."],
                     },
                     {
-                        names: ["Simón Calderón", "Luis Carlos"],
+                        names: ["Geyson", "Carlos Q."],
                     },
-                    {
-                        names: ["Luis Carlos", "Geyson"],
-                    },
-                    {
-                        names: ["Carlos Q.", "Geyson"],
-                    }
+                    { names: ["Luis Carlos"] },
+                    { names: ["Geyson"], }
                 ]
             },
             {
@@ -218,7 +224,7 @@ const areasSchedule = [
                         names: ["Geyson", "Carlos Q."],
                     },
                     {
-                        names: ["Geyson", "María José"],
+                        names: ["Geyson", "Juan Pablo"],
                     },
                     {
                         names: ["Geyson", "Juan Pablo"],
@@ -242,91 +248,61 @@ const areasSchedule = [
         color: "#661fc7",
         stripes: [
             {
-                time: "14:00-16:00",
+                time: "10:00-12:00",
                 tutors: [
                     {},
                     {},
                     {},
                     {},
                     {},
-                    {
-                        names: ["Luis Gabriel"]
-                    },
-                    {
-                        names: ["Nicolás"]
-                    }
+                    { names: ["Nicolás"] },
+                    { names: ["Jessica"] }
+                ]
+            },
+            {
+                time: "14:00-16:00",
+                tutors: [
+                    { names: ["Nicolás"] },
+                    { names: ["Luis Gabriel"] },
+                    { names: ["Nicolás"] },
+                    { names: ["Luis Gabriel"] },
+                    { names: ["Luis Gabriel"] },
+                    { names: ["Juan Diego"] },
+                    { names: ["Nicolás"] }
                 ]
             },
             {
                 time: "16:00-18:00",
                 tutors: [
-                    {
-                        names: ["Juan Diego"],
-                    },
-                    {
-                        names: ["Jessica"],
-                    },
-                    {
-                        names: ["Juan Diego"],
-                    },
-                    {
-                        names: ["Jessica"],
-                    },
-                    {
-                        names: ["Juan Diego"],
-                    },
-                    {
-                        names: ["Jorge Quintero"],
-                    },
-                    {
-                        names: ["Jessica"],
-                    }
+                    { names: ["Luis Gabriel"], },
+                    { names: ["Jessica"], },
+                    { names: ["Luis Gabriel"], },
+                    { names: ["Jessica"], },
+                    { names: ["Jessica"], },
+                    { names: ["Jorge Quintero"], },
+                    { names: ["Jessica"], },
                 ]
             },
             {
                 time: "18:00-20:00",
                 tutors: [
-                    {
-                        names: ["Jorge Quintero"],
-                    },
-                    {
-                        names: ["Jorge Quintero"],
-                    },
-                    {
-                        names: ["Jorge Quintero"],
-                    },
-                    {
-                        names: ["Jorge Quintero"],
-                    },
-                    {
-                        names: ["Jessica"],
-                    },
-                    {
-                        names: ["Nicolás"],
-                    },
-                    {
-                        names: ["Nicolás"],
-                    }
+                    { names: ["Jorge Quintero"], },
+                    { names: ["Jorge Quintero"], },
+                    { names: ["Jorge Quintero"], },
+                    { names: ["Jorge Quintero"], },
+                    { names: ["Jessica"], },
+                    { names: ["Nicolás"], },
+                    { names: ["Nicolás"], },
                 ]
             },
             {
                 time: "20:00-22:00",
                 tutors: [
-                    {
-                        names: ["Luis Gabriel"],
-                    },
-                    {
-                        names: ["Luis Gabriel"],
-                    },
-                    {
-                        names: ["Luis Gabriel"],
-                    },
-                    {
-                        names: ["Luis Gabriel"],
-                    },
-                    {
-                        names: ["Nicolás"],
-                    },
+                    { names: ["Juan Diego"], },
+                    { names: ["Luis Gabriel"], },
+                    { names: ["Juan Diego"], },
+                    { names: ["Luis Gabriel"], },
+                    { names: ["Nicolás"], },
                     {},
                     {}
                 ]
@@ -457,19 +433,19 @@ const areasSchedule = [
                 time: "16:00-18:00",
                 tutors: [
                     {
-                        names: ["Juliana"]
+                        names: ["Paula"]
                     },
                     {
-                        names: ["Juliana"]
-                    },
-                    {
-                        names: ["Juliana"]
+                        names: ["Carlos"]
                     },
                     {
                         names: ["Laura"]
                     },
                     {
                         names: ["Laura"]
+                    },
+                    {
+                        names: ["Carlos"]
                     },
                     {
                         names: ["Iver"]
@@ -483,16 +459,16 @@ const areasSchedule = [
                 time: "18:00-20:00",
                 tutors: [
                     {
+                        names: ["Juliana"]
+                    },
+                    {
+                        names: ["Juliana"]
+                    },
+                    {
+                        names: ["Juliana"]
+                    },
+                    {
                         names: ["Iver"]
-                    },
-                    {
-                        names: ["Carlos"]
-                    },
-                    {
-                        names: ["Paula"]
-                    },
-                    {
-                        names: ["Carlos"]
                     },
                     {
                         names: ["Paula"]
@@ -537,91 +513,61 @@ const areasSchedule = [
         color: "#e97e1c",
         stripes: [
             {
-                time: "14:00-16:00",
+                time: "10:00-12:00",
                 tutors: [
                     {},
                     {},
                     {},
                     {},
                     {},
-                    {
-                        names: ["Juan Diego"]
-                    },
-                    {
-                        names: ["Juan Diego"]
-                    },
+                    { names: ["Karen Triana"] },
+                    { names: ["Camila Pinilla"] },
+                ]
+            },
+            {
+                time: "14:00-16:00",
+                tutors: [
+                    { names: ["Karen Triana"] },
+                    { names: ["Víctor De Moya"] },
+                    { names: ["Víctor De Moya"] },
+                    { names: ["Camila Pinilla"] },
+                    { names: ["Diego Buitrago"] },
+                    { names: ["Juan Diego"] },
+                    { names: ["Juan Diego"] },
                 ]
             },
             {
                 time: "16:00-18:00",
                 tutors: [
-                    {
-                        names: ["Gerson Orduz"],
-                    },
-                    {
-                        names: ["Camila Pinilla"],
-                    },
-                    {
-                        names: ["Gerson Orduz"],
-                    },
-                    {
-                        names: ["Gerson Orduz"],
-                    },
-                    {
-                        names: ["Camila Pinilla"],
-                    },
-                    {
-                        names: ["Camila Pinilla"],
-                    },
-                    {
-                        names: ["Karen Triana"],
-                    }
+                    { names: ["Gerson Orduz"], },
+                    { names: ["Camila Pinilla"], },
+                    { names: ["Gerson Orduz"], },
+                    { names: ["Gerson Orduz"], },
+                    { names: ["Camila Pinilla"], },
+                    { names: ["Camila Pinilla"], },
+                    { names: ["Karen Triana"], }
                 ]
             },
             {
                 time: "18:00-20:00",
                 tutors: [
-                    {
-                        names: ["Víctor De Moya"],
-                    },
-                    {
-                        names: ["Sebastian Fragozo"],
-                    },
-                    {
-                        names: ["Víctor De Moya"],
-                    },
-                    {
-                        names: ["Sebastian Fragozo"],
-                    },
-                    {
-                        names: ["Diego Buitrago"],
-                    },
-                    {
-                        names: ["Karen Triana"],
-                    },
-                    {
-                        names: ["Diego Buitrago"],
-                    }
+                    { names: ["Víctor De Moya"], },
+                    { names: ["Sebastian Fragozo"], },
+                    { names: ["Víctor De Moya"], },
+                    { names: ["Sebastian Fragozo"], },
+                    { names: ["Diego Buitrago"], },
+                    { names: ["Karen Triana"], },
+                    { names: ["Diego Buitrago"], }
                 ]
             },
             {
                 time: "20:00-22:00",
                 tutors: [
-                    {
-                        names: ["Sebastian Fragozo"],
-                    },
-                    {
-                        names: ["Víctor De Moya"],
-                    },
-                    {
-                        names: ["Karen Triana"],
-                    },
-                    {
-                        names: ["Víctor De Moya"],
-                    },
-                    {
-                        names: ["Diego Buitrago"],
-                    },
+                    { names: ["Sebastian Fragozo"], },
+                    { names: ["Víctor De Moya"], },
+                    { names: ["Karen Triana"], },
+                    { names: ["Víctor De Moya"], },
+                    { names: ["Diego Buitrago"], },
                     {},
                     {}
                 ]
@@ -638,7 +584,7 @@ const faqs = [
     },
     {
         question: "¿Cuáles son las franjas de atención del programa?",
-        answer: `Puedes consultar los horarios de atención (/horarios)[Aqui]`,
+        answer: `Puedes consultar los horarios de atención (/horarios)[Aqui].`,
         id: 1
     },
     {

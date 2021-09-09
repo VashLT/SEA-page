@@ -43,7 +43,9 @@ interface Istripe {
 
 type TimeStripeProps = Istripe;
 
-type ScheduleProps = IntrinsicProps & IareaSchedule;
+type ScheduleProps = IntrinsicProps & IareaSchedule & {
+    disabled?: any;
+}
 
 interface Iquestion {
     question: string;
@@ -54,3 +56,7 @@ interface Iquestion {
 type QuestionProps = Iquestion;
 
 type SelectAreaProps = IntrinsicProps;
+
+interface HorarioPageProps {
+    disabled?: any;
+}

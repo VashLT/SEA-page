@@ -32,7 +32,7 @@ export const App: React.FC = () => {
               <AreasPage />
             </Route>
             <Route exact path='/horarios'>
-              <HorarioPage />
+              <HorarioPage disabled/>
             </Route>
             <Route exact path='/faq'>
               <FAQPage />

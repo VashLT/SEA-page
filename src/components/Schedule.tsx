@@ -18,12 +18,12 @@ const mapHeader = (header: string) => {
     )
 }
 
-export const Schedule: React.FC<ScheduleProps> = ({ id, stripes }) => {
+export const Schedule: React.FC<ScheduleProps> = ({ id, stripes, ...props }) => {
     const isEmpty = !stripes || Object.keys(stripes).length === 0;
     console.log({ isEmpty });
     return (
         <div id={id} className="horario">
-            <div className="container-fluid c-schedule">
+            <div className={`container-fluid c-schedule ${"disabled" in props ? "not-active" : ""}`}>
                 <div className="row row-header">
                     <div className="col column--time" style={{ border: "none" }}>
                         <p className="typo-p--schedule-header">Hora</p>
