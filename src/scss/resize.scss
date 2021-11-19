@@ -237,7 +237,7 @@
             height: 17vh;
         }
     }
-    & .speech-bubble {
+    .speech-bubble {
         &--right {
             &::after {
                 margin-right: -8px;
@@ -249,7 +249,7 @@
             }
         }
     }
-    & .c {
+    .c {
         &-logo {
             max-height: 80px;
         }
@@ -488,7 +488,7 @@
 }
 
 @media screen and (max-height: 750px) {
-    & .animate {
+    .animate {
         &-widget {
             animation-name: swipe-up--responsive;
         }
