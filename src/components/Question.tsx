@@ -23,9 +23,9 @@ export const Question: React.FC<QuestionProps> = ({ answer, id, question }) => {
                 onClick={() => document!.getElementById(`question${id}`)!.click()}
             >
                 <h5 className="mb-0">
-                    <a className="btn typo-p" id={`question${id}`} data-toggle="collapse" data-target={`#collapse${id}`} aria-expanded="true" aria-controls="collapseOne">
+                    <p className="btn typo-p" id={`question${id}`} title="Pregunta frecuente" data-toggle="collapse" data-target={`#collapse${id}`} aria-expanded="true" aria-controls="collapseOne">
                         {question}
-                    </a>
+                    </p>
                 </h5>
             </div>
 
