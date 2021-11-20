@@ -1,0 +1,196 @@
+@import "./variables.sass"
+@import "./animations.sass"
+
+.header-base
+    @extend .c
+
+    padding: 1vh 4vw 1vh 0px
+    position: relative
+
+    flex-direction: row !important
+
+    justify-content: flex-start !important
+
+    width: 100%
+    height: 15%
+
+    h1
+        font-size: 50px
+        font-weight: 600
+        color: $color-font--title
+
+    &::after
+        content: ""
+        position: absolute
+        bottom: 10%
+        width: $title-overline-width
+        height: 4px
+        background-color: $color-header-hover-bar
+
+#headerAreasPage
+    @extend .header-base
+    padding: 0px $page-margin !important
+    height: 15vh
+    min-height: 15%
+
+#areas
+    @extend .c
+    flex-direction: row !important
+    padding: 40px $page-margin 0px !important
+
+    flex-wrap: wrap
+
+    transition: all 0.2s ease
+
+    width: 100%
+
+    justify-content: space-evenly !important
+
+#headerSchedulePage
+    @extend #headerAreasPage
+
+#headerFAQPage
+    @extend #headerAreasPage
+
+#areasSchedule
+    width: 100vw
+    max-width: 100vw
+    min-height: 75vh
+    height: auto
+    margin-bottom: 80px
+
+.btn
+    &-logo
+        & svg
+            transform: scale(1.4)
+
+    &-join
+        @extend .c
+        flex-direction: row !important
+
+        background-color: $color-join-btn
+
+        width: 100%
+        height: 100%
+
+        color: white !important
+        font-size: clamp(20px, 4vh, 40px)
+        font-weight: 500
+
+        border-radius: $btn-radius
+
+.nav
+    &-links
+        margin-left: auto
+
+    &-item
+        &-spaced
+            border-radius: $btn-radius
+            padding: 10px 30px
+
+.typo
+    &-all
+        & h1,
+        p
+            color: $color-font
+
+    &-nav
+        &-link
+            font-size: 30px
+            font-weight: 600
+            color: $color-nav-link
+
+            &:hover
+                color: $color-nav-link--hover
+
+        &-title
+            text-decoration: none
+            font-size: 40px
+            font-weight: 600
+            color: white
+            font-family: $font-family
+
+    &-p
+        font-size: 25px
+        font-weight: 500
+        color: $color-font--faq-title
+        &--schedule
+
+            @extend .typo-p
+            margin: 0
+            padding: 20px 10px
+
+            transition: all 0.2s ease
+
+            &-header
+
+                @extend .typo-p--schedule
+                font-size: 30px
+                text-align: center
+                color: $color-font--schedule_header
+
+            &-time
+
+                @extend .typo-p--schedule
+                font-size: 20px
+
+            &-tutor
+
+                @extend .typo-p--schedule
+                font-size: 20px
+                color: $color-font--schedule_tutor
+
+        &--main
+            text-align: justify
+            font-size: $font-size--main_text
+            color: $color-font--main_text
+
+        &-answer
+            color: $color-font--faq-answer
+            font-size: 20px
+            font-weight: 400
+
+    &-h1
+        &--main
+            font-size: $font-size--main_title
+            font-weight: 800
+            color: $color-font--main_title
+
+    &-a
+        color: $color-link--blue
+        font-size: 20px
+        &:hover
+            color: $color-hover--blue_link
+
+.load-spinner
+    display: inline-block
+
+    // center it
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    width: 80px
+    height: 80px
+
+    & div
+        box-sizing: border-box
+        display: block
+        position: absolute
+        width: 64px
+        height: 64px
+        margin: 8px
+        border: 8px solid map-get($colors, "green-UIS")
+        border-radius: 50%
+        animation: spinner-rotate 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite
+        border-color: map-get($colors, "green-UIS") transparent transparent transparent
+
+        &:first-child
+            animation-delay: -0.45s
+
+        &:nth-child(2)
+            animation-delay: -0.3s
+
+        &:nth-child(3)
+            animation-delay: -0.15s

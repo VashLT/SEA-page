@@ -1,0 +1,409 @@
+@import "./variables.sass"
+
+.c
+    display: flex
+    flex-direction: column
+
+    margin: 0
+    padding: 0
+
+    align-items: center
+    justify-content: center
+
+    border-radius: $btn-radius
+
+    font-family: $font-family !important
+
+    &-area
+        @extend .c
+        border-radius: $btn-radius
+
+        min-width: 300px
+        width: 15vw
+        max-width: 400px
+        min-height: $areas-min-height
+        max-height: $areas-max-height
+        height: $areas-height
+
+        margin-bottom: 30px
+        margin-right: 2%
+
+        transition: all 0.2s ease
+
+        &:hover
+            transform: scale(1.005)
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px,rgba(17, 17, 26, 0.1) 0px 16px 48px
+
+        &--header
+            @extend .c
+            border-radius: 10px
+
+            max-height: $areas-max-height * 0.2
+            height: $areas-height * 0.2
+            min-height: $areas-min-height * 0.2
+            width: 100%
+
+            transition: transform 0.2s ease-in-out
+
+            & a
+                color: white
+                text-decoration: none
+                font-size: 30px
+                font-weight: 600
+
+            &:hover
+                transform: scale(1.01)
+                cursor: pointer
+
+        &--body
+
+            @extend .c
+
+            flex-direction: row
+
+            min-height: $areas-min-height * 0.8
+            height: $areas-height * 0.8
+            max-height: $areas-max-height * 0.8
+
+            flex-wrap: wrap
+            padding: 50px 10px
+
+            justify-content: space-evenly
+            align-items: flex-start
+
+    &-btn
+
+        @extend .c
+        &--join
+
+            @extend .c-btn
+            min-width: 150px
+            max-height: 120px
+            min-height: 60px
+            width: 90%
+
+            height: 10vh
+
+            & svg
+                transform: scale(1.2)
+
+            &:hover
+                transform: scale(1.02)
+                box-shadow: 2px 1px 4px 0 $color-svg-bg--hover, 2px 2px 8px 0 $color-svg-bg--hover
+                & a
+                    transform: scale(1.02)
+
+                & svg
+                    transform: scale(1.23)
+
+    &-content
+
+        @extend .c
+
+        &--main
+
+            @extend .c-content
+            width: 35vw
+            & h1,
+            p
+                width: 90%
+
+    &-image
+
+        @extend .c
+        &--main
+            & img
+                min-width: 475px
+                max-width: 1000px
+                width: 35vw
+                height: auto
+                transition: transform 0.2s ease-in
+
+                &:hover
+                    transform: translateY($image-shift-hover)
+                    cursor: pointer
+
+        & img
+            height: 28vh
+            width: auto
+
+            transition: transform 0.2s ease-in
+
+            &:hover
+                transform: translateY($image-shift-hover)
+                cursor: pointer
+
+    &-subject
+
+        @extend .c
+        margin-bottom: 20px
+        width: 90%
+
+        padding: 10px 20px
+
+        transition: transform 0.2s ease-in-out
+
+        &:hover
+            transform: scale(1.05)
+            cursor: pointer
+
+            & a
+                color: rgb(77, 77, 77)
+
+        & a
+            color: #111
+            font-size: 20px
+            text-decoration: none
+            font-weight: 500
+
+    &-select
+        &--schedule
+            margin-right: auto
+
+            width: 35vw
+            min-width: 180px
+            max-width: 350px
+
+            min-height: 100px
+            height: 10vh
+            max-height: 150px
+            padding: 2vh 0
+
+    &-nav
+
+        @extend .c
+
+        border-radius: 0 !important
+        justify-content: flex-start
+
+        min-width: 100%
+        width: 100%
+        padding: 0 10vw
+
+        z-index: 100
+
+        &:hover
+            background-color: $color-navbar--hover
+
+    &-logo
+
+        @extend .c
+        flex-direction: row
+
+        max-height: 88px
+
+    &-schedule
+        border-radius: $btn-radius
+        padding: 0
+        margin: 0
+        width: 100%
+        max-width: 100%
+        height: 100%
+        box-shadow: 0 2px 4px 0 #c0c0c0, 0 3px 8px 0 #c0bfbf
+
+        &.not-active
+            &::after
+
+    &-stripe
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        border-bottom: solid 2px rgb(208, 206, 206)
+        transition: all 0.1s ease
+
+        padding: 0
+
+        background-color: #fff
+
+        min-height: 12vh
+
+        &:hover
+            background-color: $color-soft--hover
+            cursor: pointer
+
+        &--disabled
+
+            @extend .c-stripe
+            background-color: $color-stripe-disabled
+            pointer-events: none
+
+    &-svg
+        &_background
+            background-repeat: no-repeat
+            background-position: center top
+
+            position: relative
+            &--land
+
+                @extend .c-svg_background
+                background-image: url("../images/bg-landPage.png")
+                background-size: 90% 90%
+
+            &--areas
+
+                @extend .c-svg_background
+                background-position: center
+                background-image: url("../images/bg-areasPage.png")
+                background-size: 50% 70%
+                background-attachment: fixed
+
+    &-question
+        padding: 0
+        margin: 0
+        width: 70vw
+        max-width: 90vw
+        min-height: 68px !important
+        height: auto
+
+        background-color: $color-question-header
+
+        &--header
+
+            @extend .c
+            align-items: flex-start
+
+            background-color: $color-question-header
+
+            flex-wrap: wrap
+
+            flex: 1 0 auto
+
+            overflow: auto
+
+            border-bottom: solid 2px $color-question--border
+
+            max-width: 100%
+
+            min-height: 68px !important
+            height: auto
+
+        &--body
+            background-color: $color-question-body
+            &:hover
+                cursor: default
+
+        &:hover
+            cursor: pointer
+            transform: scale(1.005)
+            box-shadow: 1px 2px 4px 0 $color-bg--hover, 1px 4px 8px 0 $color-bg--hover
+
+    &-theme_switcher
+
+        @extend .c
+
+        position: fixed
+        top: 20%
+        right: 0
+        background-color: white
+        width: $width--theme_switcher
+        height: $height--theme_switcher
+
+        border-radius: $radius--theme_switcher 0 0 $radius--theme_switcher
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
+
+        align-items: flex-start
+
+        z-index: 200
+
+        // transition: width 0.2s ease-in, background-color $time-dark_mode-transition, top 0.5s ease-in,
+        //     height 0.3s ease-out;
+
+        &:hover
+            width: $width-hover--theme_switcher
+            cursor: pointer
+            & svg
+                fill: rgb(248, 224, 38)
+
+        & svg
+            fill: hsl(53, 100%, 50%)
+            stroke: hsl(53, 100%, 30%)
+            stroke-width: 0.2px
+            margin-left: 25px
+
+    &-widget
+        position: absolute
+        bottom: 0
+        left: 20%
+        transform: translateY(100%)
+        will-change: transform
+        &:hover
+            box-shadow: 0 4px 8px rgba(105, 106, 106, 0.85)
+
+    &olumn
+    &-header
+
+        @extend .c
+        min-width: $schedule-col-width--min
+        width: $schedule-col-width
+
+    &--time
+        padding: 0
+        margin: 0
+
+        text-align: center
+        min-width: $schedule-col-width--min
+        width: $schedule-col-width
+        border-right: solid 2px rgb(208, 206, 206)
+
+    &--day
+        padding: 0
+        margin: 0
+        min-width: $schedule-col-width--min
+        width: $schedule-col-width
+
+.row
+    --bs-gutter-x: 0
+    &-header
+        transition: all 0.2s ease-in-out
+        width: auto
+        border-radius: $btn-radius
+        border-bottom: solid 2px rgb(148, 147, 147)
+
+    &-stripe
+        flex-direction: row
+        border-radius: $btn-radius
+
+.speech-bubble
+    position: relative
+    border-radius: $bubble-radius
+    background-color: $color-sea-bubble
+    padding: 10px 50px
+
+    &::after
+        content: ""
+        position: absolute
+        right: 0
+        top: 50%
+        width: 0
+        height: 0
+        border: 20px solid transparent
+        border-left-color: $color-sea-bubble
+        border-right: 0
+        border-bottom: 0
+        margin-top: 10px
+        margin-right: -15px
+
+    &--right
+        @extend .speech-bubble
+        @extend .c
+
+    &--left
+        @extend .speech-bubble
+        @extend .c
+
+        margin-left: auto
+
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            top: 50%
+            width: 0
+            height: 0
+            border: 20px solid transparent
+            border-right-color: $color-sea-bubble
+            border-left: 0
+            border-bottom: 0
+            margin-top: 10px
+            margin-left: -12px

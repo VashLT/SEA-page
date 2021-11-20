@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import './scss/App.scss';
+import './sass/App.sass';
 import LandPage from "./pages/LandPage";
 import HorarioPage from "./pages/HorarioPage";
 import AreasPage from "./pages/AreasPage";
@@ -32,7 +32,7 @@ export const App: React.FC = () => {
               <AreasPage />
             </Route>
             <Route exact path='/horarios'>
-              <HorarioPage disabled/>
+              <HorarioPage disabled />
             </Route>
             <Route exact path='/faq'>
               <FAQPage />
