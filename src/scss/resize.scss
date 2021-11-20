@@ -283,6 +283,13 @@
             justify-content: flex-start !important;
         }
     }
+
+    #areasPage #UISLogo {
+        left: 20px;
+        opacity: 0.5;
+        width: 100px;
+    }
+
     #headerAreasPage {
         align-items: center !important;
         & h1 {
@@ -335,24 +342,14 @@
             font-size: 15px;
         }
     }
-
+ls
     .c {
         &-question {
             width: 90vw !important;
         }
         &-theme_switcher {
-            // bottom: 0;
             top: 85%;
             height: 70px;
-
-            // border-radius: $radius--theme_switcher $radius--theme_switcher 0 0;
-            // &:hover {
-            //     height: $height-hover--theme_switcher;
-            // }
-            // & svg {
-            //     margin-left: auto;
-            //     margin-top: 25px;
-            // }
         }
     }
 }
@@ -471,8 +468,11 @@
         bottom: 20px;
         opacity: 0.5;
         pointer-events: none;
-        right: 15px;
+        left: 15px;
         z-index: 10;
+    }
+    .c-svg_background--areas {
+        background-size: 350px auto;
     }
 }
 

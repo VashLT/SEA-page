@@ -1,15 +1,15 @@
-import React, {useContext, useEffect} from 'react';
-import Navbar from "../element/Navbar";
-import DiscordWidget from "../element/DiscordWidget";
-import imgLight from "../../images/tutoria.png";
-import imgDark from "../../images/girl_night.png";
-import ThemeContext from '../element/Theme/ThemeContext';
-import { ReactComponent as DiscordIcon } from '../../images/icon/discord.svg';
-import { ReactComponent as UISLogo } from '../../images/logos/UIS.svg';
+import React, { useContext, useEffect } from 'react';
+import Navbar from "../components/Navbar";
+import DiscordWidget from "../components/DiscordWidget";
+import imgLight from "../images/tutoria.png";
+import imgDark from "../images/girl_night.png";
+import ThemeContext from '../components/Theme/ThemeContext';
+import { ReactComponent as DiscordIcon } from '../images/icon/discord.svg';
+import { ReactComponent as UISLogo } from '../images/logos/UIS.svg';
 
 
 
-export default function LandPage() {
+export const LandPage: React.FC = () => {
     const { theme } = useContext(ThemeContext);
     useEffect(() => {
         if (window.innerWidth > 1200) document.body.style.overflowY = "hidden";
@@ -25,23 +25,24 @@ export default function LandPage() {
                         <p className="typo-p--main">Únete a nuestro servidor de Discord y recibe tutorías con tan solo <strong>un click</strong>.</p>
                         <div className="c-btn--join">
                             <a className="btn btn-join smooth" href="https://discord.gg/b3QrwP7KN8" rel="noreferrer" target="_blank">
-                            <DiscordIcon />
-                            &nbsp; Unirse
+                                <DiscordIcon />
+                                &nbsp; Unirse
                             </a>
                         </div>
                     </div>
                     <div className="c-image--main animate-image">
                         <img
                             className="rounded"
-                            src={ theme === "dark" ? imgDark : imgLight}
+                            src={theme === "dark" ? imgDark : imgLight}
                             alt="SEA Online"
                         />
                     </div>
                 </div>
-                <UISLogo id="UISLogo"/>
+                <UISLogo id="UISLogo" />
             </main>
             <DiscordWidget />
         </div>
     );
 }
 
+export default LandPage

@@ -1,20 +1,17 @@
 import React, { useCallback, useState } from 'react';
-import { areas, areasMapIndex } from '../../data.js';
+import { areas, areasMapIndex } from '../data';
 
-function mapSelect(area, updateState) {
+const mapSelect = (area: Iarea, updateState: (e: React.MouseEvent) => void) => {
     return (
         <button className={"dropdown-item select-area " + getCSSClass(area.name)} onClick={updateState}>{area.name}</button>
     );
-    }
+}
 
-export default function SelectArea({onClick}) {
+export const SelectArea: React.FC<SelectAreaProps> = ({ onClick }) => {
     const [activeArea, setArea] = useState(areas[0])
-    if (onClick === undefined) {
-        throw "SelectArea component requires 'onClick' property";
-    }
 
     const toggleArea = useCallback((e) => {
-       const selectedArea = e.target;
+        const selectedArea = e.target;
         try {
             const newArea = areas[areasMapIndex.get(selectedArea.innerHTML)];
             console.log("new area", newArea);
@@ -22,13 +19,13 @@ export default function SelectArea({onClick}) {
         } catch (e) {
             console.error(e);
             return;
-        } 
+        }
     }, [setArea]);
 
-    const updateState = useCallback((e) => {
-        if (activeArea.name !== e.target.innerHTML) {
+    const updateState = useCallback((e: React.MouseEvent) => {
+        if (activeArea.name !== (e.target as HTMLElement).innerHTML) {
             toggleArea(e);
-            onClick(e);
+            onClick!(e);
         }
     }, [onClick, toggleArea, activeArea]);
 
@@ -38,14 +35,14 @@ export default function SelectArea({onClick}) {
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {activeArea.name}
             </button>
-            <div class="dropdown-menu select-menu">
+            <div className="dropdown-menu select-menu">
                 {areas.map((area) => mapSelect(area, updateState))}
             </div>
         </div>
     )
 }
 
-function getCSSClass(areaName) {
+function getCSSClass(areaName: string) {
     switch (areaName) {
         case "Matemáticas":
             return "area-circle--green";
@@ -61,3 +58,5 @@ function getCSSClass(areaName) {
             return "area-circle--green";
     }
 }
+
+export default SelectArea;

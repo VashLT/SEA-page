@@ -1,26 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
 import './scss/App.scss';
-import LandPage from "./components/page/LandPage";
-import HorarioPage from "./components/page/HorarioPage";
-import AreasPage from "./components/page/AreasPage";
-import FAQPage from "./components/page/FAQPage";
-import ThemeSwitcher from "./components/element/Theme/ThemeSwitcher";
-import ThemeContext from './components/element/Theme/ThemeContext';
+import LandPage from "./pages/LandPage";
+import HorarioPage from "./pages/HorarioPage";
+import AreasPage from "./pages/AreasPage";
+import FAQPage from "./pages/FAQPage";
+import ThemeSwitcher from "./components/Theme/ThemeSwitcher";
+import ThemeContext from './components/Theme/ThemeContext';
 
 import { fetchTheme } from './utils/fetch';
 
-function App() {
+export const App: React.FC = () => {
   const [theme, setTheme] = useState(fetchTheme());
 
   const classTheme = theme === "dark" ? "dark-mode" : "";
 
   return (
-    <ThemeContext.Provider value={{theme, setTheme}}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <div id="app" className={classTheme}>
         <ThemeSwitcher />
         <Router>
@@ -32,7 +32,7 @@ function App() {
               <AreasPage />
             </Route>
             <Route exact path='/horarios'>
-              <HorarioPage />
+              <HorarioPage disabled/>
             </Route>
             <Route exact path='/faq'>
               <FAQPage />

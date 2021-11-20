@@ -1,15 +1,16 @@
 import React from 'react';
 import Logo from "./Logo";
+import { Link } from 'react-router-dom';
 
-import { redirectHome } from '../../utils/functions';
+import { redirectHome } from '../utils/functions';
 
-export default function BubbleLogo(props) {
+export const BubbleLogo: React.FC<BubbleLogoProps> = ({ tipPosition, responsive }) => {
     var bubbleClass;
 
-    if (!props.hasOwnProperty("tipPosition")) {
+    if (!tipPosition) {
         bubbleClass = "speech-bubble--right";
     } else {
-        switch (props.tipPosition) {
+        switch (tipPosition) {
             case "left":
                 bubbleClass = "speech-bubble--left";
                 break;
@@ -22,7 +23,7 @@ export default function BubbleLogo(props) {
         }
     }
 
-    if (props.hasOwnProperty("responsive") && props.responsive) {
+    if (responsive) {
         bubbleClass = bubbleClass + " bubble-responsive";
     }
 
@@ -32,14 +33,17 @@ export default function BubbleLogo(props) {
             id="logo"
             onClick={() => redirectHome()}
         >
-            <a
+            <Link to="/" className="logo-link typo-nav-title" id="seaRedirectHome">SEA Online</Link>
+            {/* <a
                 className="logo-link typo-nav-title"
                 href="/"
                 id="seaRedirectHome"
             >
                 SEA Online
-            </a>
+            </a> */}
             <Logo />
         </div>
     );
 }
+
+export default BubbleLogo;

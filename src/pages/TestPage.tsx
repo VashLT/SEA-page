@@ -1,5 +1,5 @@
 import React from 'react'
-import BubbleLogo from "../element/BubbleLogo";
+import BubbleLogo from "../components/BubbleLogo";
 
 export default function TestPage() {
     return (
